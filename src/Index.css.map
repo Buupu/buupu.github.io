@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,yEAAI;AAIZ,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,qBAAqB;EAClC,sBAAsB,EAAE,WAAW;EACnC,uBAAuB,EAAE,SAAS;EAClC,gBAAgB,EARR,OAAO;EASf,KAAK,EARC,OAAO;CASd;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,mEACF;CACZ",
+    "sources": [
+        "Index.scss"
+    ],
+    "names": [],
+    "file": "Index.css"
+}

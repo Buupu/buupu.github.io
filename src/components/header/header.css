@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffdf6;
+  color: #1f1d1e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header svg {
+  width: 25px;
+  height: 30px;
+  margin: 25px;
+}
+
+.Header li {
+  list-style: none;
+  display: inline;
+  margin: 25px;
+}
+
+.Header li a {
+  text-decoration: none;
+  color: #1f1d1e;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Header li a:hover {
+  color: #c1255d;
+  opacity: 1;
+}
+
+.Header li .active {
+  opacity: 1;
+}
+
+.Header li .active:hover {
+  color: #1f1d1e;
+}
+/*# sourceMappingURL=header.css.map */

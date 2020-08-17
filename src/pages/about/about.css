@@ -1,0 +1,23 @@
+.About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  padding: 0 15%;
+}
+
+.About img {
+  width: 300px;
+}
+
+.About__TextWrapper {
+  margin-right: 150px;
+  padding-bottom: 44px;
+}
+/*# sourceMappingURL=about.css.map */

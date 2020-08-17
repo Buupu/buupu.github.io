@@ -1,0 +1,16 @@
+.Frame {
+  position: relative;
+  padding: 30px;
+  &__TopLeft {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+  }
+  &__BottomRight {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../Index.scss";
+.Footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  ul {
+    display: flex;
+    width: 470px;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    svg {
+      fill: $black;
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      svg {
+        fill: $cherry;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

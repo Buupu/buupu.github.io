@@ -1,0 +1,19 @@
+.Frame {
+  position: relative;
+  padding: 30px;
+}
+
+.Frame__TopLeft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+}
+
+.Frame__BottomRight {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 60px;
+}
+/*# sourceMappingURL=frameContainer.css.map */

@@ -1,0 +1,14 @@
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 0 15%;
+  img {
+    width: 300px;
+  }
+  &__TextWrapper {
+    margin-right: 150px;
+    padding-bottom: 44px;
+  }
+}

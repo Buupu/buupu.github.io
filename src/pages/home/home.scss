@@ -1,0 +1,12 @@
+.Home {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  &__LogoContainer {
+    svg {
+      width: 125px;
+      margin: 125px;
+    }
+  }
+}

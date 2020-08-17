@@ -1,0 +1,18 @@
+.Home {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.Home__LogoContainer svg {
+  width: 125px;
+  margin: 125px;
+}
+/*# sourceMappingURL=home.css.map */

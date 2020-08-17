@@ -1,0 +1,21 @@
+.Portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 0 15%;
+  &__SelectionCard {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+    cursor: pointer;
+    h3 {
+      margin: 0;
+      margin-top: 25px;
+    }
+  }
+}

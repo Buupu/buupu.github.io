@@ -1,0 +1,36 @@
+@import "../../index.scss";
+.Header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    width: 25px;
+    height: 30px;
+    margin: 25px;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    margin: 25px;
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 16px;
+      font-weight: bold;
+      opacity: 0.5;
+      transition: all 0.3s;
+      &:hover {
+        color: $cherry;
+        opacity: 1;
+      }
+    }
+    .active {
+      opacity: 1;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

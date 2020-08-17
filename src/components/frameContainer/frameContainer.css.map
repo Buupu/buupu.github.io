@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,IAAI;CAad;;AAZE,AAAD,eAAU,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,MAAM,EAAE,IAAI;CACb;;AACA,AAAD,mBAAc,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "frameContainer.scss"
+    ],
+    "names": [],
+    "file": "frameContainer.css"
+}

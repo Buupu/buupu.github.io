@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffdf6;
+  color: #1f1d1e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Experience {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.Experience ul {
+  padding: 0;
+}
+
+.Experience__NavItem, .Experience__NavItem--active {
+  list-style: none;
+  border-left: 1px solid #1f1d1e;
+  opacity: 0.8;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.Experience__NavItem--active, .Experience__NavItem--active--active {
+  opacity: 1;
+}
+/*# sourceMappingURL=experience.css.map */

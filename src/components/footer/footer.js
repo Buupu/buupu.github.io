@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./footer.css";
 import { ReactComponent as Instagram } from "../../assets/instagram.svg";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
+import gsap from "gsap";
 export default function Footer(props) {
+  let footerRef = useRef();
+
+  useEffect(() => {
+    gsap.set(footerRef, {
+      opacity: 0,
+    });
+    gsap.to(footerRef, {
+      opacity: 1,
+      delay: 0.8,
+    });
+  }, []);
+
   return (
-    <div className="Footer">
+    <div className="Footer" ref={(el) => (footerRef = el)}>
       <ul>
         <li>
           <a

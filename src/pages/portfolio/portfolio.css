@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffdf6;
+  color: #1f1d1e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
 .Portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +24,10 @@
           justify-content: space-evenly;
   width: 70%;
   padding: 0 15%;
+}
+
+.Portfolio a {
+  text-decoration: none;
 }
 
 .Portfolio__SelectionCard {
@@ -35,5 +53,12 @@
 .Portfolio__SelectionCard h3 {
   margin: 0;
   margin-top: 25px;
+  color: #1f1d1e;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Portfolio__SelectionCard:hover h3 {
+  color: #c1255d;
 }
 /*# sourceMappingURL=portfolio.css.map */

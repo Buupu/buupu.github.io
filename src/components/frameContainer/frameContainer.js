@@ -23,17 +23,19 @@ export default function FrameContainer(props) {
     gsap.to(topLeftFrameRef, {
       y: 0,
       x: 0,
+      delay: 0.2,
     });
     gsap.to(bottomRightFrameRef, {
       y: 0,
       x: 0,
+      delay: 0.2,
     });
     gsap.to(contentRef.current, {
       scale: 1,
       opacity: 1,
-      delay: 0.2,
+      delay: 0.4,
     });
-  }, []);
+  }, [props]);
   return (
     <div className="Frame">
       <div className="Frame__TopLeft" ref={(el) => (topLeftFrameRef = el)}>

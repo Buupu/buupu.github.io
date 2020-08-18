@@ -1,0 +1,21 @@
+@import "../../Index.scss";
+.Experience {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  ul {
+    padding: 0;
+  }
+  &__NavItem,
+  &__NavItem--active {
+    list-style: none;
+    border-left: 1px solid $black;
+    opacity: 0.8;
+    padding-left: 40px;
+    cursor: pointer;
+    &--active {
+      opacity: 1;
+    }
+  }
+}

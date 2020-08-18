@@ -1,9 +1,13 @@
+@import "../../Index.scss";
 .Portfolio {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 70%;
   padding: 0 15%;
+  a {
+    text-decoration: none;
+  }
   &__SelectionCard {
     height: 100px;
     width: 100px;
@@ -16,6 +20,13 @@
     h3 {
       margin: 0;
       margin-top: 25px;
+      color: $black;
+      transition: all 0.3s;
+    }
+    &:hover {
+      h3 {
+        color: $cherry;
+      }
     }
   }
 }

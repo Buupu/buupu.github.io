@@ -11,8 +11,22 @@
   width: 100%;
 }
 
+.Home__LogoContainer {
+  text-align: center;
+  padding: 125px;
+}
+
 .Home__LogoContainer svg {
   width: 125px;
-  margin: 125px;
+}
+
+.Home__LogoContainer h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.Home__LogoContainer h2 {
+  margin: 0;
+  font-weight: normal;
 }
 /*# sourceMappingURL=home.css.map */

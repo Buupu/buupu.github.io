@@ -8,6 +8,8 @@ export default function Home(props) {
       <FrameContainer>
         <div className="Home__LogoContainer">
           <Logo />
+          <h1>Sammy Fattah</h1>
+          <h2>Web Developer</h2>
         </div>
       </FrameContainer>
     </div>

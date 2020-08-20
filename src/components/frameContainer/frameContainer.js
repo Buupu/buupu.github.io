@@ -35,7 +35,7 @@ export default function FrameContainer(props) {
       opacity: 1,
       delay: 0.4,
     });
-  }, [props]);
+  }, []);
   return (
     <div className="Frame">
       <div className="Frame__TopLeft" ref={(el) => (topLeftFrameRef = el)}>

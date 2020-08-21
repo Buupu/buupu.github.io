@@ -22,7 +22,19 @@ export default function Experience(props) {
       paragraphs: ["", "", ""],
     },
     {
-      title: "Mott MacDonald",
+      title: "BSc Honors Degree",
+      timePeriod: "July 2019 - Present",
+      jobTitle: "Software Engineer",
+      paragraphs: ["", "", ""],
+    },
+    {
+      title: "Higher National Diploma",
+      timePeriod: "July 2019 - Present",
+      jobTitle: "Software Engineer",
+      paragraphs: ["", "", ""],
+    },
+    {
+      title: "Higher National Certificate",
       timePeriod: "July 2019 - Present",
       jobTitle: "Software Engineer",
       paragraphs: ["", "", ""],

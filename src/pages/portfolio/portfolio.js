@@ -3,6 +3,7 @@ import "./portfolio.css";
 import FrameContainer from "../../components/frameContainer/frameContainer";
 import { ReactComponent as Pen } from "../../assets/pen.svg";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
+import Components from "./components/components";
 export default function Portfolio(props) {
   let { path, url } = useRouteMatch();
 
@@ -37,30 +38,7 @@ export default function Portfolio(props) {
         </Route>
         <Route path={`${path}/icons`}>some icons</Route>
         <Route path={`${path}/components`}>
-          <FrameContainer>
-            <Link to={`${url}/icons`}>
-              <div className="Portfolio__SelectionCard">
-                <Pen />
-                <h3>Inputs</h3>
-              </div>
-            </Link>
-          </FrameContainer>
-          <FrameContainer>
-            <Link to={`${url}/components`}>
-              <div className="Portfolio__SelectionCard">
-                <Pen />
-                <h3>Buttons</h3>
-              </div>
-            </Link>
-          </FrameContainer>
-          <FrameContainer>
-            <Link to={`${url}/designs`}>
-              <div className="Portfolio__SelectionCard">
-                <Pen />
-                <h3>Spinners</h3>
-              </div>
-            </Link>
-          </FrameContainer>
+          <Components />
         </Route>
         <Route path={`${path}/designs`}>
           <FrameContainer>

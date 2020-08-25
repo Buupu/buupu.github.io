@@ -1,0 +1,77 @@
+@import "../../../../../Index.scss";
+.input1 {
+  outline: none;
+  font-size: 14px;
+  padding: 15px 20px;
+  padding-top: 25px;
+  padding-right: 60px;
+  width: 200px;
+  z-index: 1;
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid $black;
+  transition: all 0.3s;
+  background-color: $black;
+  &:focus {
+    border: 2px solid $orange;
+  }
+  &__container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  &__envelope {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    fill: gray;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  &__shadow {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 0;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  &__label {
+    position: absolute;
+    font-size: 14px;
+    top: 21.5px;
+    left: 22px;
+    z-index: 2;
+    transition: all 0.3s;
+    color: gray;
+    pointer-events: none;
+  }
+  &:focus + .input1__focusWrapper,
+  &:not(:placeholder-shown) + .input1__focusWrapper {
+    .input1__label {
+      font-size: 12px;
+      transform: translateY(-12px);
+    }
+  }
+  &__card {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+    top: 0px;
+    right: -60px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: rotateY(90deg);
+    transform-origin: left bottom;
+    &--success {
+      background-color: green;
+    }
+    &--error {
+      background-color: red;
+    }
+  }
+}

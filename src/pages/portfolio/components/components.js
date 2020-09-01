@@ -3,6 +3,7 @@ import FrameContainer from "../../../components/frameContainer/frameContainer";
 import { ReactComponent as Pen } from "../../../assets/pen.svg";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import Inputs from "./inputs/inputs";
+import Spinners from "./spinners/spinners";
 export default function Components(props) {
   let { path, url } = useRouteMatch();
 
@@ -39,7 +40,7 @@ export default function Components(props) {
         <Inputs />
       </Route>
       <Route path={`${path}/spinners`}>
-        <Components />
+        <Spinners />
       </Route>
       <Route path={`${path}/buttons`}>
         <Components />

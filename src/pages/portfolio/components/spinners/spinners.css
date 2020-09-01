@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffdf6;
+  color: #1f1d1e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Spinners__Container {
+  height: 300px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 25px 50px;
+  padding: 50px 100px;
+}
+
+.Spinners__GallaryBar {
+  width: 100%;
+  position: absolute;
+  height: 20px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Spinners__GallaryIndicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #1f1d1e;
+  margin: 0 6px;
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.Spinners__GallaryIndicator--active {
+  opacity: 1;
+}
+
+.Spinners__GallaryForward {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.Spinners__GallaryBack {
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+}
+
+.fade-enter {
+  opacity: 0;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.fade-exit {
+  position: absolute;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/*# sourceMappingURL=spinners.css.map */

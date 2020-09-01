@@ -1,0 +1,66 @@
+@import "../../../../Index.scss";
+.Spinners {
+  &__Container {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 25px 50px;
+    padding: 50px 100px;
+  }
+  &__GallaryBar {
+    width: 100%;
+    position: absolute;
+    height: 20px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__GallaryIndicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: $black;
+    margin: 0 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s all;
+    &--active {
+      opacity: 1;
+    }
+  }
+  &__GallaryForward {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+  }
+  &__GallaryBack {
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+  }
+}
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit {
+  position: absolute;
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(200px);
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: all 0.3s;
+}

@@ -1,9 +1,11 @@
 import React from "react";
 import FrameContainer from "../../../components/frameContainer/frameContainer";
-import { ReactComponent as Pen } from "../../../assets/pen.svg";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import Inputs from "./inputs/inputs";
 import Spinners from "./spinners/spinners";
+import { ReactComponent as Input } from "../../../assets/input.svg";
+import { ReactComponent as Spinner } from "../../../assets/spinner.svg";
+import { ReactComponent as Button } from "../../../assets/button.svg";
 export default function Components(props) {
   let { path, url } = useRouteMatch();
 
@@ -13,7 +15,7 @@ export default function Components(props) {
         <FrameContainer>
           <Link to={`${url}/inputs`}>
             <div className="Portfolio__SelectionCard">
-              <Pen />
+              <Input />
               <h3>Inputs</h3>
             </div>
           </Link>
@@ -21,7 +23,7 @@ export default function Components(props) {
         <FrameContainer>
           <Link to={`${url}/spinners`}>
             <div className="Portfolio__SelectionCard">
-              <Pen />
+              <Spinner />
               <h3>Spinners</h3>
             </div>
           </Link>
@@ -29,7 +31,7 @@ export default function Components(props) {
         <FrameContainer>
           <Link to={`${url}/buttons`}>
             <div className="Portfolio__SelectionCard">
-              <Pen />
+              <Button />
               <h3>Buttons</h3>
             </div>
           </Link>

@@ -8,33 +8,35 @@ export default function FrameContainer(props) {
   let bottomRightFrameRef = useRef();
   let contentRef = useRef();
   useEffect(() => {
-    gsap.set(contentRef.current, {
-      scale: 0,
-      opacity: 0,
-    });
-    gsap.set(topLeftFrameRef, {
-      y: contentRef.current.offsetHeight / 2,
-      x: contentRef.current.offsetWidth / 2,
-    });
-    gsap.set(bottomRightFrameRef, {
-      y: -contentRef.current.offsetHeight / 2,
-      x: -contentRef.current.offsetWidth / 2,
-    });
-    gsap.to(topLeftFrameRef, {
-      y: 0,
-      x: 0,
-      delay: 0.2,
-    });
-    gsap.to(bottomRightFrameRef, {
-      y: 0,
-      x: 0,
-      delay: 0.2,
-    });
-    gsap.to(contentRef.current, {
-      scale: 1,
-      opacity: 1,
-      delay: 0.4,
-    });
+    if (props.animated) {
+      gsap.set(contentRef.current, {
+        scale: 0,
+        opacity: 0,
+      });
+      gsap.set(topLeftFrameRef, {
+        y: contentRef.current.offsetHeight / 2,
+        x: contentRef.current.offsetWidth / 2,
+      });
+      gsap.set(bottomRightFrameRef, {
+        y: -contentRef.current.offsetHeight / 2,
+        x: -contentRef.current.offsetWidth / 2,
+      });
+      gsap.to(topLeftFrameRef, {
+        y: 0,
+        x: 0,
+        delay: 0.2,
+      });
+      gsap.to(bottomRightFrameRef, {
+        y: 0,
+        x: 0,
+        delay: 0.2,
+      });
+      gsap.to(contentRef.current, {
+        scale: 1,
+        opacity: 1,
+        delay: 0.4,
+      });
+    }
   }, []);
   return (
     <div className="Frame">

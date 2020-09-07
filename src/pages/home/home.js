@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from "../../assets/logo.svg";
 export default function Home(props) {
   return (
     <div className="Home">
-      <FrameContainer>
+      <FrameContainer animated>
         <div className="Home__LogoContainer">
           <Logo />
           <h1>Sammy Fattah</h1>

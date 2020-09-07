@@ -17,16 +17,19 @@
     align-items: center;
     padding: 25px 15px;
     cursor: pointer;
-    h3 {
+    h2 {
       margin: 0;
-      margin-top: 25px;
       color: $black;
       transition: all 0.3s;
+      font-weight: 400;
     }
-    &:hover {
-      h3 {
-        color: $cherry;
-      }
+    h3 {
+      margin: 0;
+      color: $black;
+      transition: all 0.3s;
+      font-weight: 400;
+      font-size: 12px;
+      opacity: 0.75;
     }
   }
 }

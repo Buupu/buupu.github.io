@@ -42,7 +42,7 @@ export default function Experience(props) {
   ];
   return (
     <div className="Experience">
-      <FrameContainer>
+      <FrameContainer animated>
         <div className="Experience__Wrapper">
           <div className="Experience__NavContainer">
             <div

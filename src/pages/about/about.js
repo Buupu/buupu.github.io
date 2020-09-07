@@ -52,7 +52,7 @@ export default function About(props) {
           incididunt.
         </p>
       </div>
-      <FrameContainer>
+      <FrameContainer animated>
         <img src={MyImage} alt="Sammy" />
       </FrameContainer>
     </div>

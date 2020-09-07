@@ -2,7 +2,7 @@ import React, { useState, Component } from "react";
 import FrameContainer from "../../../../components/frameContainer/frameContainer";
 import { ReactComponent as ForwardArrow } from "../../../../assets/forwardArrow.svg";
 import { ReactComponent as BackArrow } from "../../../../assets/backArrow.svg";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 import Spinner1 from "./spinner1/spinner1";
 import "./spinners.css";
 export default function Inputs(props) {

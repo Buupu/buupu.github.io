@@ -50,15 +50,21 @@ code {
   cursor: pointer;
 }
 
-.Portfolio__SelectionCard h3 {
+.Portfolio__SelectionCard h2 {
   margin: 0;
-  margin-top: 25px;
   color: #1f1d1e;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: 400;
 }
 
-.Portfolio__SelectionCard:hover h3 {
-  color: #c1255d;
+.Portfolio__SelectionCard h3 {
+  margin: 0;
+  color: #1f1d1e;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.75;
 }
 /*# sourceMappingURL=portfolio.css.map */

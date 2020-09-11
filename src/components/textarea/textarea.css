@@ -38,7 +38,7 @@ code {
 .textarea textarea:not(:placeholder-shown) + .textarea__label .textarea__labelContent {
   -webkit-transform: translate(-12px, -12px);
           transform: translate(-12px, -12px);
-  font-size: 12px;
+  font-size: 14px;
   color: #ff990a;
 }
 
@@ -102,7 +102,7 @@ code {
   width: 100%;
   right: 5px;
   top: 5px;
-  font-size: 12px;
+  font-size: 14px;
   color: #c1255d;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;

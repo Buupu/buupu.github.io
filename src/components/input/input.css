@@ -36,7 +36,7 @@ code {
 .input input:not(:placeholder-shown) + .input__label .input__labelContent {
   -webkit-transform: translate(-12px, -20px);
           transform: translate(-12px, -20px);
-  font-size: 12px;
+  font-size: 14px;
   color: #ff990a;
 }
 
@@ -100,7 +100,7 @@ code {
   width: 100%;
   right: 5px;
   top: 3px;
-  font-size: 12px;
+  font-size: 14px;
   color: #c1255d;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;

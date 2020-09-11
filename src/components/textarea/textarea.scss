@@ -19,7 +19,7 @@
     &:focus + .textarea__label .textarea__labelContent,
     &:not(:placeholder-shown) + .textarea__label .textarea__labelContent {
       transform: translate(-12px, -12px);
-      font-size: 12px;
+      font-size: 14px;
       color: $orange;
     }
     &:focus + .textarea__label::after {
@@ -68,7 +68,7 @@
     width: 100%;
     right: 5px;
     top: 5px;
-    font-size: 12px;
+    font-size: 14px;
     color: $cherry;
     transition: transform 0.3s ease;
     z-index: 2;

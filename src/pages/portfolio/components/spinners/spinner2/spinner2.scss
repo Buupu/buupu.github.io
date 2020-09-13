@@ -1,0 +1,14 @@
+.spinner2 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 10%;
+  path {
+    animation: a 1s linear infinite;
+  }
+}
+
+@keyframes a {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}

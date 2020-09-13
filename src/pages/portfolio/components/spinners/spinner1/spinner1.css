@@ -1,61 +1,141 @@
-.spinner1__container {
-  width: 36px;
-  height: 36px;
+.spinner1 {
+  width: 9em;
+  height: 9em;
   border-radius: 50%;
-  margin: 20px;
-  position: relative;
+  background: linear-gradient(var(--a0), transparent calc(50% - 0.25em - 1px), #1f1d1e calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a1), transparent calc(50% - 0.25em - 1px), #ff990a calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a2), transparent calc(50% - 0.25em - 1px), #ff990a90 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a3), transparent calc(50% - 0.25em - 1px), #ff990a80 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a4), transparent calc(50% - 0.25em - 1px), #ff990a70 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a5), transparent calc(50% - 0.25em - 1px), #ff990a60 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a6), transparent calc(50% - 0.25em - 1px), #ff990a50 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a7), transparent calc(50% - 0.25em - 1px), #ff990a40 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a8), transparent calc(50% - 0.25em - 1px), #ff990a30 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a9), transparent calc(50% - 0.25em - 1px), #ff990a20 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px)), linear-gradient(var(--a10), transparent calc(50% - 0.25em - 1px), #ff990a10 calc(50% - 0.25em) calc(50% + 0.25em), transparent calc(50% + 0.25em + 1px));
+  -webkit-animation: a0 2s cubic-bezier(0, 0, 1, 1) infinite, a1 2s cubic-bezier(0.09091, 0, 0.90909, 1) infinite, a2 2s cubic-bezier(0.18182, 0, 0.81818, 1) infinite, a3 2s cubic-bezier(0.27273, 0, 0.72727, 1) infinite, a4 2s cubic-bezier(0.36364, 0, 0.63636, 1) infinite, a5 2s cubic-bezier(0.45455, 0, 0.54545, 1) infinite, a6 2s cubic-bezier(0.54545, 0, 0.45455, 1) infinite, a7 2s cubic-bezier(0.63636, 0, 0.36364, 1) infinite, a8 2s cubic-bezier(0.72727, 0, 0.27273, 1) infinite, a9 2s cubic-bezier(0.81818, 0, 0.18182, 1) infinite, a10 2s cubic-bezier(0.90909, 0, 0.09091, 1) infinite;
+          animation: a0 2s cubic-bezier(0, 0, 1, 1) infinite, a1 2s cubic-bezier(0.09091, 0, 0.90909, 1) infinite, a2 2s cubic-bezier(0.18182, 0, 0.81818, 1) infinite, a3 2s cubic-bezier(0.27273, 0, 0.72727, 1) infinite, a4 2s cubic-bezier(0.36364, 0, 0.63636, 1) infinite, a5 2s cubic-bezier(0.45455, 0, 0.54545, 1) infinite, a6 2s cubic-bezier(0.54545, 0, 0.45455, 1) infinite, a7 2s cubic-bezier(0.63636, 0, 0.36364, 1) infinite, a8 2s cubic-bezier(0.72727, 0, 0.27273, 1) infinite, a9 2s cubic-bezier(0.81818, 0, 0.18182, 1) infinite, a10 2s cubic-bezier(0.90909, 0, 0.09091, 1) infinite;
 }
 
-.spinner1__container .spinner1__circle:nth-child(1) {
-  -webkit-transform: rotate(calc(360deg / 8 * 1)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 1)) translate(18px);
+@-webkit-keyframes a0 {
+  to {
+    --a0: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(2) {
-  -webkit-transform: rotate(calc(360deg / 8 * 2)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 2)) translate(18px);
+@keyframes a0 {
+  to {
+    --a0: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(3) {
-  -webkit-transform: rotate(calc(360deg / 8 * 3)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 3)) translate(18px);
+@-webkit-keyframes a1 {
+  to {
+    --a1: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(4) {
-  -webkit-transform: rotate(calc(360deg / 8 * 4)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 4)) translate(18px);
+@keyframes a1 {
+  to {
+    --a1: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(5) {
-  -webkit-transform: rotate(calc(360deg / 8 * 5)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 5)) translate(18px);
+@-webkit-keyframes a2 {
+  to {
+    --a2: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(6) {
-  -webkit-transform: rotate(calc(360deg / 8 * 6)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 6)) translate(18px);
+@keyframes a2 {
+  to {
+    --a2: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(7) {
-  -webkit-transform: rotate(calc(360deg / 8 * 7)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 7)) translate(18px);
+@-webkit-keyframes a3 {
+  to {
+    --a3: 1turn;
+  }
 }
 
-.spinner1__container .spinner1__circle:nth-child(8) {
-  -webkit-transform: rotate(calc(360deg / 8 * 8)) translate(18px);
-          transform: rotate(calc(360deg / 8 * 8)) translate(18px);
+@keyframes a3 {
+  to {
+    --a3: 1turn;
+  }
 }
 
-.spinner1__circle {
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  margin-left: -6px;
-  margin-top: -6px;
-  background-color: red;
-  border: 3px solid purple;
+@-webkit-keyframes a4 {
+  to {
+    --a4: 1turn;
+  }
+}
+
+@keyframes a4 {
+  to {
+    --a4: 1turn;
+  }
+}
+
+@-webkit-keyframes a5 {
+  to {
+    --a5: 1turn;
+  }
+}
+
+@keyframes a5 {
+  to {
+    --a5: 1turn;
+  }
+}
+
+@-webkit-keyframes a6 {
+  to {
+    --a6: 1turn;
+  }
+}
+
+@keyframes a6 {
+  to {
+    --a6: 1turn;
+  }
+}
+
+@-webkit-keyframes a7 {
+  to {
+    --a7: 1turn;
+  }
+}
+
+@keyframes a7 {
+  to {
+    --a7: 1turn;
+  }
+}
+
+@-webkit-keyframes a8 {
+  to {
+    --a8: 1turn;
+  }
+}
+
+@keyframes a8 {
+  to {
+    --a8: 1turn;
+  }
+}
+
+@-webkit-keyframes a9 {
+  to {
+    --a9: 1turn;
+  }
+}
+
+@keyframes a9 {
+  to {
+    --a9: 1turn;
+  }
+}
+
+@-webkit-keyframes a10 {
+  to {
+    --a10: 1turn;
+  }
+}
+
+@keyframes a10 {
+  to {
+    --a10: 1turn;
+  }
 }
 /*# sourceMappingURL=spinner1.css.map */

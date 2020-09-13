@@ -1,0 +1,23 @@
+.spinner2 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 10%;
+}
+
+.spinner2 path {
+  -webkit-animation: a 1s linear infinite;
+          animation: a 1s linear infinite;
+}
+
+@-webkit-keyframes a {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes a {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+/*# sourceMappingURL=spinner2.css.map */

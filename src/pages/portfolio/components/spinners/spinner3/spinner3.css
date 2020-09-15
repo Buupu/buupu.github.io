@@ -1,0 +1,42 @@
+.spinner3 {
+  text-align: center;
+  color: #fffdf6;
+  background: currentColor;
+}
+
+.spinner3__dot {
+  background: currentColor;
+}
+
+.spinner3__dot, .spinner3__dot:after {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background: #ff990a;
+  -webkit-animation: s3a 1.2s calc(((var(--i) + var(--o, 0)) / var(--n)-1) *1.2s) infinite;
+          animation: s3a 1.2s calc(((var(--i) + var(--o, 0)) / var(--n)-1) *1.2s) infinite;
+}
+
+.spinner3__dot::after {
+  --o: 0.1;
+  background: currentColor;
+  content: "";
+}
+
+@-webkit-keyframes s3a {
+  0%,
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes s3a {
+  0%,
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=spinner3.css.map */

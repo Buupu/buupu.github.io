@@ -3,16 +3,13 @@ import FrameContainer from "../../../../components/frameContainer/frameContainer
 import { ReactComponent as ForwardArrow } from "../../../../assets/forwardArrow.svg";
 import { ReactComponent as BackArrow } from "../../../../assets/backArrow.svg";
 import { CSSTransition } from "react-transition-group";
-import Spinner1 from "./spinner2/spinner2";
+import Spinner1 from "./spinner1/spinner1";
+import Spinner2 from "./spinner2/spinner2";
+import Spinner3 from "./spinner3/spinner3";
 import "./spinners.css";
 export default function Inputs(props) {
-  const [componentIndex, setComponentIndex] = useState(0);
-  const components = [
-    <Spinner1 variety={1} />,
-    <Spinner1 variety={2} />,
-    <Spinner1 variety={3} />,
-    <Spinner1 variety={4} />,
-  ];
+  const [componentIndex, setComponentIndex] = useState(2);
+  const components = [<Spinner1 />, <Spinner2 />, <Spinner3 />];
   return (
     <FrameContainer>
       <div className="Spinners__Container">

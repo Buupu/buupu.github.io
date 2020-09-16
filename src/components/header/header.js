@@ -46,6 +46,14 @@ export default function Header(props) {
               Contact
             </NavLink>
           </li>
+          <li>
+            <a
+              href="https://github.com/Buupu/CV/raw/master/Sammy%20Fattah%20-%20CV.pdf"
+              target="_blank"
+            >
+              Resumé
+            </a>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import FrameContainer from "../../components/frameContainer/frameContainer";
 import MyImage from "../../assets/sammyfattah.JPG";
 import "./about.css";
+import gsap from "gsap";
 export default function About(props) {
+  let textRef = useRef();
+
+  useEffect(() => {
+    gsap.to(textRef, {
+      opacity: 1,
+      delay: 0.8,
+    });
+  }, []);
   return (
     <div className="About">
-      <div className="About__TextWrapper">
+      <div
+        className="About__TextWrapper"
+        ref={(el) => (textRef = el)}
+        style={{ opacity: 0 }}
+      >
         <h1>About Me</h1>
         <p>
           Sit dolore dolor cillum laboris ad pariatur nostrud minim quis eu
@@ -53,7 +66,9 @@ export default function About(props) {
         </p>
       </div>
       <FrameContainer animated>
-        <img src={MyImage} alt="Sammy" />
+        <div className="About__ImageContainer">
+          <img src={MyImage} alt="Sammy" />
+        </div>
       </FrameContainer>
     </div>
   );

@@ -8,7 +8,6 @@ import About from "./pages/about/about";
 import Experience from "./pages/experience/experience";
 import Portfolio from "./pages/portfolio/portfolio";
 import Contact from "./pages/contact/contact";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";

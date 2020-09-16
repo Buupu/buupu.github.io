@@ -9,10 +9,6 @@ export default function FrameContainer(props) {
   let contentRef = useRef();
   useEffect(() => {
     if (props.animated) {
-      gsap.set(contentRef.current, {
-        scale: 0,
-        opacity: 0,
-      });
       gsap.set(topLeftFrameRef, {
         y: contentRef.current.offsetHeight / 2,
         x: contentRef.current.offsetWidth / 2,
@@ -49,7 +45,15 @@ export default function FrameContainer(props) {
       >
         <BottomRightFrame />
       </div>
-      <div ref={contentRef}>{props.children}</div>
+      <div
+        ref={contentRef}
+        style={{
+          opacity: props.animated ? 0 : 1,
+          transform: `scale(${props.animated ? 0 : 1})`,
+        }}
+      >
+        {props.children}
+      </div>
     </div>
   );
 }

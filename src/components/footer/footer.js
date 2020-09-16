@@ -8,9 +8,6 @@ export default function Footer(props) {
   let footerRef = useRef();
 
   useEffect(() => {
-    gsap.set(footerRef, {
-      opacity: 0,
-    });
     gsap.to(footerRef, {
       opacity: 1,
       delay: 0.8,
@@ -18,7 +15,11 @@ export default function Footer(props) {
   }, []);
 
   return (
-    <div className="Footer" ref={(el) => (footerRef = el)}>
+    <div
+      className="Footer"
+      ref={(el) => (footerRef = el)}
+      style={{ opacity: 0 }}
+    >
       <ul>
         <li>
           <a

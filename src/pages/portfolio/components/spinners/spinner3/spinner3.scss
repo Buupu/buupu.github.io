@@ -1,5 +1,5 @@
 $d: 2.5em;
-$t: 1.2s;
+$t: 2s;
 
 .spinner3 {
   text-align: center;
@@ -9,19 +9,19 @@ $t: 1.2s;
     background: currentColor;
     &,
     &:after {
-      display: inline-block;
+      display: block;
       width: $d;
       height: $d;
-      border-radius: 50%;
-      background: #ff990a;
-      animation: s3a $t calc(((var(--i) + var(--o, 0)) / var(--n)-1) *#{$t})
+      background: #c1255d;
+      animation: s3a $t calc(((var(--i) + var(--o, 0)) / var(--n)) *#{$t})
         infinite;
     }
 
     &::after {
-      --o: 0.1;
+      --o: 0.2;
       background: currentColor;
       content: "";
+      z-index: 1;
     }
   }
 

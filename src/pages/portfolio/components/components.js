@@ -12,7 +12,7 @@ export default function Components(props) {
   return (
     <Switch>
       <Route exact path={path}>
-        <FrameContainer>
+        <FrameContainer animated>
           <Link to={`${url}/inputs`}>
             <div className="Portfolio__SelectionCard">
               <Input />
@@ -20,7 +20,7 @@ export default function Components(props) {
             </div>
           </Link>
         </FrameContainer>
-        <FrameContainer>
+        <FrameContainer animated>
           <Link to={`${url}/spinners`}>
             <div className="Portfolio__SelectionCard">
               <Spinner />
@@ -28,7 +28,7 @@ export default function Components(props) {
             </div>
           </Link>
         </FrameContainer>
-        <FrameContainer>
+        <FrameContainer animated>
           <Link to={`${url}/buttons`}>
             <div className="Portfolio__SelectionCard">
               <Button />
@@ -37,7 +37,6 @@ export default function Components(props) {
           </Link>
         </FrameContainer>
       </Route>
-
       <Route path={`${path}/inputs`}>
         <Inputs />
       </Route>

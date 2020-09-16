@@ -9,19 +9,19 @@
 }
 
 .spinner3__dot, .spinner3__dot:after {
-  display: inline-block;
+  display: block;
   width: 2.5em;
   height: 2.5em;
-  border-radius: 50%;
-  background: #ff990a;
-  -webkit-animation: s3a 1.2s calc(((var(--i) + var(--o, 0)) / var(--n)-1) *1.2s) infinite;
-          animation: s3a 1.2s calc(((var(--i) + var(--o, 0)) / var(--n)-1) *1.2s) infinite;
+  background: #c1255d;
+  -webkit-animation: s3a 2s calc(((var(--i) + var(--o, 0)) / var(--n)) *2s) infinite;
+          animation: s3a 2s calc(((var(--i) + var(--o, 0)) / var(--n)) *2s) infinite;
 }
 
 .spinner3__dot::after {
-  --o: 0.1;
+  --o: 0.2;
   background: currentColor;
   content: "";
+  z-index: 1;
 }
 
 @-webkit-keyframes s3a {

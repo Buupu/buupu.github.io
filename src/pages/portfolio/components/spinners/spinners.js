@@ -11,53 +11,51 @@ export default function Inputs(props) {
   const [componentIndex, setComponentIndex] = useState(2);
   const components = [<Spinner1 />, <Spinner2 />, <Spinner3 />];
   return (
-    <FrameContainer>
-      <div className="Spinners__Container">
-        {components.map((comp, index) => (
-          <CSSTransition
-            unmountOnExit
-            in={index === componentIndex}
-            timeout={300}
-            classNames="fade"
-          >
-            {comp}
-          </CSSTransition>
-        ))}
-        <div className="Spinners__GallaryBar">
-          {components.map((comp, index) => {
-            return (
-              <div
-                className={
-                  index === componentIndex
-                    ? "Spinners__GallaryIndicator Spinners__GallaryIndicator--active"
-                    : "Spinners__GallaryIndicator"
-                }
-                onClick={() => setComponentIndex(index)}
-              ></div>
-            );
-          })}
-        </div>
-        <div
-          className="Spinners__GallaryForward"
-          onClick={() =>
-            setComponentIndex(
-              componentIndex === components.length - 1 ? 0 : componentIndex + 1
-            )
-          }
+    <div className="Spinners__Container">
+      {components.map((comp, index) => (
+        <CSSTransition
+          unmountOnExit
+          in={index === componentIndex}
+          timeout={300}
+          classNames="fade"
         >
-          <ForwardArrow />
-        </div>
-        <div
-          className="Spinners__GallaryBack"
-          onClick={() =>
-            setComponentIndex(
-              componentIndex === 0 ? components.length - 1 : componentIndex - 1
-            )
-          }
-        >
-          <BackArrow />
-        </div>
+          {comp}
+        </CSSTransition>
+      ))}
+      <div className="Spinners__GallaryBar">
+        {components.map((comp, index) => {
+          return (
+            <div
+              className={
+                index === componentIndex
+                  ? "Spinners__GallaryIndicator Spinners__GallaryIndicator--active"
+                  : "Spinners__GallaryIndicator"
+              }
+              onClick={() => setComponentIndex(index)}
+            ></div>
+          );
+        })}
       </div>
-    </FrameContainer>
+      <div
+        className="Spinners__GallaryForward"
+        onClick={() =>
+          setComponentIndex(
+            componentIndex === components.length - 1 ? 0 : componentIndex + 1
+          )
+        }
+      >
+        <ForwardArrow />
+      </div>
+      <div
+        className="Spinners__GallaryBack"
+        onClick={() =>
+          setComponentIndex(
+            componentIndex === 0 ? components.length - 1 : componentIndex - 1
+          )
+        }
+      >
+        <BackArrow />
+      </div>
+    </div>
   );
 }

@@ -1,10 +1,14 @@
 @import "../../Index.scss";
 .Portfolio {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  width: 70%;
-  padding: 0 15%;
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  &__Container {
+    display: flex;
+    padding: 25px;
+  }
   a {
     text-decoration: none;
   }
@@ -31,5 +35,48 @@
       font-size: 12px;
       opacity: 0.75;
     }
+  }
+
+  ul {
+    padding: 0;
+  }
+  &__NavItem,
+  &__NavItem--active {
+    list-style: none;
+    border-left: 1px solid $black;
+    opacity: 0.8;
+    padding-left: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    &--active {
+      opacity: 1;
+      font-weight: bold;
+    }
+  }
+  &__Nav {
+    margin: 0;
+  }
+  &__Wrapper {
+    display: flex;
+    padding: 50px;
+  }
+  &__NavActiveIndicator {
+    height: 40px;
+    width: 3px;
+    background-color: $cherry;
+    position: absolute;
+    left: -1px;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+  }
+  &__NavContainer {
+    position: relative;
+    margin-right: 100px;
+  }
+  &__ContentContainer {
+    display: flex;
   }
 }

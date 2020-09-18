@@ -73,33 +73,64 @@ code {
   cursor: pointer;
 }
 
-.fade-enter {
+.fadeForward-enter {
   opacity: 0;
   -webkit-transform: translateX(-200px);
           transform: translateX(-200px);
 }
 
-.fade-enter-active {
+.fadeForward-enter-active {
   opacity: 1;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
-.fade-exit {
+.fadeForward-exit {
   position: absolute;
   opacity: 1;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
-.fade-exit-active {
+.fadeForward-exit-active {
   opacity: 0;
   -webkit-transform: translateX(200px);
           transform: translateX(200px);
 }
 
-.fade-enter-active,
-.fade-exit-active {
+.fadeForward-enter-active,
+.fadeForward-exit-active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fadeBackwards-enter {
+  opacity: 0;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.fadeBackwards-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.fadeBackwards-exit {
+  position: absolute;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.fadeBackwards-exit-active {
+  opacity: 0;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.fadeBackwards-enter-active,
+.fadeBackwards-exit-active {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }

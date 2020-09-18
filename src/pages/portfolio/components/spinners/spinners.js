@@ -9,7 +9,22 @@ import Spinner3 from "./spinner3/spinner3";
 import "./spinners.css";
 export default function Inputs(props) {
   const [componentIndex, setComponentIndex] = useState(2);
+  const [isForward, setIsForward] = useState(true);
   const components = [<Spinner1 />, <Spinner2 />, <Spinner3 />];
+
+  const handleComponentIndexChange = (targetIndex) => {
+    if (targetIndex < 0) {
+      setIsForward(false);
+      setComponentIndex(components.length - 1);
+    } else if (targetIndex > components.length - 1) {
+      setIsForward(true);
+      setComponentIndex(0);
+    } else {
+      setIsForward(targetIndex > componentIndex);
+      setComponentIndex(targetIndex);
+    }
+  };
+
   return (
     <div className="Spinners__Container">
       {components.map((comp, index) => (
@@ -17,7 +32,7 @@ export default function Inputs(props) {
           unmountOnExit
           in={index === componentIndex}
           timeout={300}
-          classNames="fade"
+          classNames={isForward ? "fadeForward" : "fadeBackwards"}
         >
           {comp}
         </CSSTransition>
@@ -31,28 +46,20 @@ export default function Inputs(props) {
                   ? "Spinners__GallaryIndicator Spinners__GallaryIndicator--active"
                   : "Spinners__GallaryIndicator"
               }
-              onClick={() => setComponentIndex(index)}
+              onClick={() => handleComponentIndexChange(index)}
             ></div>
           );
         })}
       </div>
       <div
         className="Spinners__GallaryForward"
-        onClick={() =>
-          setComponentIndex(
-            componentIndex === components.length - 1 ? 0 : componentIndex + 1
-          )
-        }
+        onClick={() => handleComponentIndexChange(componentIndex + 1)}
       >
         <ForwardArrow />
       </div>
       <div
         className="Spinners__GallaryBack"
-        onClick={() =>
-          setComponentIndex(
-            componentIndex === 0 ? components.length - 1 : componentIndex - 1
-          )
-        }
+        onClick={() => handleComponentIndexChange(componentIndex - 1)}
       >
         <BackArrow />
       </div>

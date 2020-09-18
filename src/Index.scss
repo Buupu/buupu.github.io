@@ -1,18 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-$vanilla: #fffdf6;
-$black: #1f1d1e;
-$cherry: #c1255d;
-$orange: #ff990a;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap");
+@import "./colors.scss";
 body {
   margin: 0;
-  font-family: "Crimson Text", serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $vanilla;
   color: $black;
+  h1,
+  h2,
+  h3 {
+    font-family: "Libre Baskerville", serif;
+  }
   p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
   }
 }
 

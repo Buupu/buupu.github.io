@@ -13,7 +13,7 @@
 }
 
 .About img {
-  width: 300px;
+  width: 350px;
 }
 
 .About__TextWrapper {
@@ -21,8 +21,14 @@
   padding-bottom: 44px;
 }
 
+.About__TextWrapper p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
 .About__ImageContainer {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
+  margin: 25px;
 }
 /*# sourceMappingURL=about.css.map */

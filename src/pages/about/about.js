@@ -21,48 +21,32 @@ export default function About(props) {
       >
         <h1>About Me</h1>
         <p>
-          Sit dolore dolor cillum laboris ad pariatur nostrud minim quis eu
-          cillum ullamco. Amet consequat sint ad sint reprehenderit. Anim do
-          adipisicing id fugiat mollit duis occaecat fugiat veniam aliqua
-          aliquip sit velit anim. Nulla adipisicing sint cillum ipsum ad nostrud
-          ipsum. Cupidatat dolor ut dolor labore cupidatat ipsum ullamco
-          cupidatat pariatur deserunt enim consequat irure pariatur. Non
-          incididunt Lorem mollit tempor voluptate qui est voluptate do
-          consequat fugiat. Nostrud est ad do reprehenderit excepteur veniam
-          incididunt.
+          Hello! I’m Sammy Fattah, a software developer based in Glasgow,
+          Scotland.
         </p>
         <p>
-          Sit dolore dolor cillum laboris ad pariatur nostrud minim quis eu
-          cillum ullamco. Amet consequat sint ad sint reprehenderit. Anim do
-          adipisicing id fugiat mollit duis occaecat fugiat veniam aliqua
-          aliquip sit velit anim. Nulla adipisicing sint cillum ipsum ad nostrud
-          ipsum. Cupidatat dolor ut dolor labore cupidatat ipsum ullamco
-          cupidatat pariatur deserunt enim consequat irure pariatur. Non
-          incididunt Lorem mollit tempor voluptate qui est voluptate do
-          consequat fugiat. Nostrud est ad do reprehenderit excepteur veniam
-          incididunt.
+          I have a keen interest in web development and user interface design. I
+          love designing and building products that provide elegant and simple
+          user experiences while being performant and robust.
         </p>
         <p>
-          Sit dolore dolor cillum laboris ad pariatur nostrud minim quis eu
-          cillum ullamco. Amet consequat sint ad sint reprehenderit. Anim do
-          adipisicing id fugiat mollit duis occaecat fugiat veniam aliqua
-          aliquip sit velit anim. Nulla adipisicing sint cillum ipsum ad nostrud
-          ipsum. Cupidatat dolor ut dolor labore cupidatat ipsum ullamco
-          cupidatat pariatur deserunt enim consequat irure pariatur. Non
-          incididunt Lorem mollit tempor voluptate qui est voluptate do
-          consequat fugiat. Nostrud est ad do reprehenderit excepteur veniam
-          incididunt.
+          I attended Glasgow's University of Strathclyde where I studied
+          Computer Information Science and graduated with a Bachelors of Science
+          degree with First Class honours.
         </p>
         <p>
-          Sit dolore dolor cillum laboris ad pariatur nostrud minim quis eu
-          cillum ullamco. Amet consequat sint ad sint reprehenderit. Anim do
-          adipisicing id fugiat mollit duis occaecat fugiat veniam aliqua
-          aliquip sit velit anim. Nulla adipisicing sint cillum ipsum ad nostrud
-          ipsum. Cupidatat dolor ut dolor labore cupidatat ipsum ullamco
-          cupidatat pariatur deserunt enim consequat irure pariatur. Non
-          incididunt Lorem mollit tempor voluptate qui est voluptate do
-          consequat fugiat. Nostrud est ad do reprehenderit excepteur veniam
-          incididunt.
+          Since graduating I have worked independently and within development
+          teams on a variety of interesting and meaningful projects in
+          production.
+        </p>
+        <p>
+          Here are a few technologies I’ve been working with recently: React
+          HTML & (S)CSS Javascript (ES6+) GSAP Figma Node.js
+        </p>
+        <p>
+          I am currently working on freelance projects but I’m always looking
+          for an exciting opportunity. Reach out to me through the contact page,
+          or send me an email at sammyfattah@gmail.com!
         </p>
       </div>
       <FrameContainer animated>

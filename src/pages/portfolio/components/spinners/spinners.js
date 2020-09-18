@@ -1,5 +1,4 @@
 import React, { useState, Component } from "react";
-import FrameContainer from "../../../../components/frameContainer/frameContainer";
 import { ReactComponent as ForwardArrow } from "../../../../assets/forwardArrow.svg";
 import { ReactComponent as BackArrow } from "../../../../assets/backArrow.svg";
 import { CSSTransition } from "react-transition-group";

@@ -83,7 +83,6 @@
 
 .Portfolio__NavItem--active, .Portfolio__NavItem--active--active {
   opacity: 1;
-  font-weight: bold;
 }
 
 .Portfolio__Nav {

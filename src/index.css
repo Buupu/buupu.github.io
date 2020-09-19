@@ -13,7 +13,8 @@ body h3 {
   font-family: "Libre Baskerville", serif;
 }
 
-body p {
+body p,
+body span {
   font-family: "Source Sans Pro", sans-serif;
 }
 

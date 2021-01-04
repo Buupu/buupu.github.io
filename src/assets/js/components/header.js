@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 export default function Header(props) {
   const resumeHref =
@@ -10,14 +10,11 @@ export default function Header(props) {
       <div class="main-header hide-on-responsive">
         <div class="main-header-container">
           <div class="one-flex-margin-container">
-            <div class="logo-container">
               <div class="logo-holder">
-                <a>
+                <Link to="/">
                   <img src={Logo} width="34px" height="34px" alt="S Logo" />
-                </a>
+                </Link>
               </div>
-            </div>
-
             <div class="main-header-cta-middle-holder">
               <nav className="main-menu-container">
                 <ul>
@@ -55,15 +52,9 @@ export default function Header(props) {
               </nav>
             </div>
             <div className="main-header-cta-right-holder">
-              <nav className="main-menu-container">
-                <ul>
-                  <li>
-                    <a href={resumeHref} target="_blank">
-                      View Resume
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+              <a href={resumeHref} target="_blank">
+                View Resume
+              </a>
             </div>
           </div>
         </div>

@@ -61,7 +61,7 @@
   padding: 9px 0;
   margin: auto;
   background-color: $gold;
-  @include font-titling-raleway-extended-bold(10px, normal, 0.5px);
+  @include font-raleway-normal-reg(10px, normal, 0.5px);
   color: $white;
   text-align: center;
   text-transform: uppercase;
@@ -74,7 +74,7 @@
   ul li {
     margin: 0;
     a {
-      @include font-titling-raleway-normal-reg(10px, 10px, 1px);
+      @include font-raleway-normal-reg(10px, 10px, 1px);
       padding-top: 9px;
     }
   }
@@ -120,7 +120,7 @@
 }
 
 .mobile-main-menu-holder ul li.mob-tier-0 {
-  @include font-titling-raleway-condensed-standard(16px, 16px, 0.8px);
+  @include font-raleway-normal-reg(16px, 16px, 0.8px);
   text-transform: uppercase;
   margin: 0 0 25px;
 }
@@ -134,7 +134,7 @@
 }
 
 .mobile-main-menu-holder ul li.mob-tier-1 {
-  @include font-titling-raleway-wide-med(10px, 10px, 0.5px);
+  @include font-raleway-normal-reg(10px, 10px, 0.5px);
   text-transform: uppercase;
   margin-left: 20px;
   margin: 0 20px 20px;
@@ -202,7 +202,7 @@
   color: $light-grey;
 }
 
-/* ==================  Pop up sign up form ================== */
+/*------------ Pop up sign up form------------*/
 .pop-up-container {
   position: absolute;
   top: 60%;
@@ -211,7 +211,7 @@
   padding: 20px;
   margin: auto;
   h3 {
-    @include font-titling-raleway-extended-bold(12px, 14px, 0.6px);
+    @include font-raleway-normal-reg(12px, 14px, 0.6px);
     padding: 60px 40px 25px;
   }
 }
@@ -260,6 +260,6 @@
 }
 
 .cta-middle-text-holder {
-  @include font-titling-raleway-extended-bold(7px, normal, 0.2px);
+  @include font-raleway-normal-reg(7px, normal, 0.2px);
   height: 30px;
 }

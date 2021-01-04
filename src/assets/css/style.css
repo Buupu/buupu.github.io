@@ -1,14 +1,5 @@
+/*------------ Theme CSS ------------*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  vertical-align: top;
-}
-
-/* ==================  Theme CSS  ================== */
 h1,
 h2,
 h3,
@@ -19,25 +10,10 @@ h5 {
   padding: 0;
 }
 
-/* ==================  Site Fonts  ================== */
-/* ==================  Site Animations  ================== */
-/* ==================  Site Flex Settings  ================== */
-/* ==================  Responsive Fonts Settings  ================== */
-body {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: normal;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/*------------ Site Fonts ------------*/
+/*------------ Site Animations ------------*/
+/*------------ Site Flex Settings ------------*/
+/*------------ Containers ------------*/
 .wrapper {
   margin: 0;
   padding: 0;
@@ -60,6 +36,7 @@ body {
   margin: auto;
 }
 
+/*------------ Block Containers ------------*/
 .one-block-container {
   display: block;
   position: relative;
@@ -95,6 +72,7 @@ body {
   margin: 0 20px;
 }
 
+/*------------ % Containers ------------*/
 .full-width-container {
   display: block;
   position: relative;
@@ -130,16 +108,16 @@ body {
   margin: 0;
 }
 
+/*------------ Flex Containers ------------*/
 .one-flex-container {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
   width: 1200px;
@@ -152,11 +130,10 @@ body {
   display: -ms-flexbox !important;
   display: flex !important;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
   width: 1200px;
@@ -168,11 +145,10 @@ body {
   display: -ms-flexbox !important;
   display: flex !important;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
   width: 1200px;
@@ -201,11 +177,10 @@ body {
   display: -ms-flexbox !important;
   display: flex !important;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
   width: 100%;
@@ -221,7 +196,7 @@ body {
   margin: 0;
 }
 
-/* ==================  Sub Header  ================== */
+/*------------ Sub Header ------------*/
 .sub-header-container {
   display: block;
   position: relative;
@@ -267,7 +242,7 @@ body {
   position: relative;
   padding: 10px 20px 8px;
   margin: auto;
-  font-family: "Titling raleway FB Extd Bd", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 9px;
@@ -334,7 +309,7 @@ body {
   opacity: 0.4;
 }
 
-/* ==================  Main Header  ================== */
+/*------------ Main Header ------------*/
 .main-header {
   display: block;
   position: absolute;
@@ -342,11 +317,8 @@ body {
   top: 0;
   border-bottom: 1px solid #f5f5f5;
   z-index: 9999;
-}
-
-.main-header.is-sticky {
-  position: fixed;
-  top: -30px;
+  -webkit-box-shadow: 2px 0px 5px rgba(39, 39, 38, 0.25);
+          box-shadow: 2px 0px 5px rgba(39, 39, 38, 0.25);
 }
 
 .main-header-container {
@@ -406,7 +378,7 @@ body {
 .main-menu-container ul li a {
   display: inline-block;
   margin: 0;
-  font-family: "Titling raleway FB Cond Standard", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -423,21 +395,7 @@ body {
   z-index: 9;
 }
 
-.main-header-cta-right-holder ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0;
-  text-align: right;
-}
-
-.main-header-cta-right-holder ul li {
-  display: inline-block;
-  padding: 0;
-  margin: 0 15px;
-}
-
-.main-header-cta-right-holder ul li a {
+.main-header-cta-right-holder a {
   display: block;
   padding: 10px 14px;
   margin: 0;
@@ -455,11 +413,11 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.main-header-cta-right-holder ul li a:hover {
+.main-header-cta-right-holder a:hover {
   opacity: 0.4;
 }
 
-.main-header-cta-right-holder ul li a span {
+.main-header-cta-right-holder a span {
   display: inline-block;
   margin-top: -2px;
   margin-right: 5px;
@@ -543,121 +501,6 @@ body {
   vertical-align: middle;
 }
 
-.main-header-cta-right-holder ul li:nth-last-child(even) {
-  margin: 0;
-  margin-left: 15px;
-  margin-right: 20px;
-}
-
-.main-header-cta-middle-holder ul li:nth-last-child(even) {
-  margin: 0;
-  margin-left: 15px;
-  margin-right: 20px;
-}
-
-/* ==================  Main Menu Dropdown Containers ================== */
-.main-menu-container ul li.tier-0 .sub-menu-wrap {
-  visibility: hidden;
-  opacity: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
-  min-height: 220px;
-  margin-top: 3px;
-  left: 0;
-  background-color: rgba(245, 245, 245, 0.99);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.main-menu-container ul li:hover .sub-menu-wrap {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* ==================  Main Menu Dropdown Tier 0 ================== */
-.main-menu-container ul li.tier-0 {
-  -webkit-transition: border 0.3s ease-in-out;
-  transition: border 0.3s ease-in-out;
-  border-bottom: 3px solid transparent;
-}
-
-.main-menu-container ul li.tier-0 a {
-  color: #757575;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
-.main-menu-container ul li.tier-0:hover a {
-  color: rgba(117, 117, 117, 0.4);
-}
-
-.main-menu-container ul li.tier-0.active {
-  border-bottom: 3px solid #757575;
-}
-
-.main-menu-container ul li.tier-0.active a {
-  color: #111d5e;
-}
-
-.main-menu-container ul li.tier-0:hover {
-  color: #111d5e;
-  border-bottom: 3px solid #757575;
-}
-
-/* Highlight the shop menu item */
-.main-menu-container ul li a.shop-menu-item {
-  color: #111d5e;
-}
-
-.main-menu-container ul li a.parent-active {
-  color: rgba(117, 117, 117, 0.4);
-}
-
-.main-menu-container ul li a.active {
-  color: rgba(117, 117, 117, 0.4);
-}
-
-/* ==================  Main Menu Dropdown Tier 1 ================== */
-.main-menu-container ul li .sub-menu-wrap ul.sub-menu {
-  display: block;
-  position: relative;
-  padding: 35px 0 25px;
-  margin: 0;
-}
-
-.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 {
-  display: block;
-  width: 350px;
-  margin: auto;
-  text-align: left;
-  padding-left: 65px;
-}
-
-.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 a {
-  display: inline-block;
-  padding: 0 0 15px;
-  margin: 0;
-  font-family: "Titling raleway FB Wd Med", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 1px;
-  color: #757575;
-}
-
-.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 a {
-  color: #757575;
-  border: 0;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
-.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 a:hover {
-  color: rgba(117, 117, 117, 0.4);
-}
-
 .menu-image-container {
   display: block;
   position: absolute;
@@ -684,239 +527,9 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.main-menu-container ul li.tier-1:hover .menu-image-holder {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* ==================  Pop up sign up form ================== */
-.pop-up-container {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 10000;
-  width: 730px;
-  height: 660px;
-  background-color: #f5f5f5;
-  color: #111d5e;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding: 50px 105px;
-}
-
-.pop-up-container h3 {
-  text-align: center;
-  font-family: "Titling raleway FB Extd Bd", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 35px;
-  letter-spacing: -0.3px;
-  text-transform: uppercase;
-  padding: 0 10px 35px;
-}
-
-.pop-up-container p {
-  text-align: center;
-}
-
-.pop-up-background {
-  display: block;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: #272726;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-
-.pop-up-background.on-crew {
-  opacity: 0.9;
-  pointer-events: all;
-  visibility: visible;
-}
-
-.pop-up-close-icon {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  cursor: pointer;
-}
-
-.pop-up-container.show-pop-up {
-  display: block;
-}
-
-.pop-up-form-holder {
-  width: 520px;
-  margin: 0 auto;
-  padding: 35px 0 0;
-}
-
-.half-input-holder-popup {
-  width: 240px;
-  display: block;
-  float: left;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.half-input-holder-popup input {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  width: 100%;
-  height: 40px;
-  background-color: #f5f5f5;
-  border: 2px solid #111d5e;
-  padding: 0 15px;
-  color: #757575;
-}
-
-.half-input-holder-popup:nth-of-type(odd) {
-  margin-right: 20px;
-}
-
-.half-input-holder-popup:nth-of-type(even) {
-  margin-left: 20px;
-}
-
-.full-input-holder-popup {
-  width: 520px;
-  margin-bottom: 30px;
-  float: left;
-}
-
-.full-input-holder-popup input {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  width: 100%;
-  height: 40px;
-  background-color: #f5f5f5;
-  border: 2px solid #111d5e;
-  padding: 0 15px;
-  color: #757575;
-}
-
-.full-input-holder-popup textarea {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #757575;
-  width: 100%;
-  height: 400px;
-  padding: 20px 15px;
-  border: 2px solid #111d5e;
-}
-
-.full-input-holder-popup select {
-  cursor: pointer;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  width: 100%;
-  height: 40px;
-  background-color: #f5f5f5;
-  border: 2px solid #111d5e;
-  padding: 0 20px;
-  color: #757575;
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position: center right 10px;
-}
-
-.full-input-holder-popup label {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 0.5px;
-  color: #757575;
-}
-
-.full-input-holder-popup label a {
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  color: #111d5e;
-  opacity: 1;
-  border-bottom: 1px solid #111d5e;
-}
-
-.full-input-holder-popup label a:hover {
-  opacity: 0.4;
-}
-
-.pop-up-form-holder .checkbox-holder input[type="checkbox"] {
-  display: inline-block;
-  float: left;
-}
-
-.pop-up-form-holder .checkbox-holder span {
-  display: inline-block;
-  float: left;
-  width: 80%;
-}
-
-.submit-holder-popup {
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  width: 150px;
-  margin-bottom: 30px;
-  float: left;
-  opacity: 1;
-}
-
-.submit-holder-popup input {
-  width: 100%;
-  font-family: "Titling raleway FB Extd Med", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  text-transform: uppercase;
-  border: 2px solid #111d5e;
-  text-transform: uppercase;
-  background-color: #111d5e;
-  padding: 11px 23px;
-  cursor: pointer;
-}
-
-.submit-holder-popup:hover {
-  opacity: 0.4;
-}
-
-/* ==================  Page CSS  ================== */
-/* ==================  Misc CSS  ================== */
-/*
-Hidden Classes: .hide-on-responsive,
-Visible Classes: .show-on-responsive,
-
-Misc */
+/*------------ Page CSS ------------*/
+/*------------ Misc CSS ------------*/
+/*------------ Default settings ------------*/
 textarea,
 input,
 select {
@@ -925,23 +538,6 @@ select {
   -moz-appearance: none;
   border-radius: 0;
   resize: vertical;
-}
-
-input[type="checkbox"] {
-  display: block;
-  float: left;
-  margin: 1px 10px 0 0;
-  padding: 0;
-  height: 15px;
-  width: 15px;
-  border: 2px solid #111d5e;
-  border-radius: 0;
-  -webkit-appearance: none;
-  background-color: #ffffff;
-}
-
-input[type="checkbox"]:checked {
-  background-size: contain;
 }
 
 div {
@@ -964,6 +560,7 @@ p:nth-last-child(1) {
 img {
   border: 0;
   -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   vertical-align: top;
 }
 
@@ -978,6 +575,31 @@ a {
   outline: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------ Backgrounds ------------*/
 .white-background {
   background-color: #ffffff;
 }
@@ -1014,6 +636,7 @@ a {
   background-color: #111d5e;
 }
 
+/*------------ Spacers ------------*/
 .twenty-spacer {
   padding-top: 20px;
 }
@@ -1050,10 +673,7 @@ a {
   padding: 0 50px;
 }
 
-.top-push {
-  padding-top: 91px;
-}
-
+/*------------ misc settings ------------*/
 .hide-on-responsive {
   display: block !important;
 }
@@ -1074,35 +694,6 @@ a {
   z-index: 999;
 }
 
-.middle-divider {
-  border-right: 1px solid #757575;
-}
-
-.no-desk {
-  display: none !important;
-}
-
-.add-flex-fix {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-}
-
-.flex-absolute-fix {
-  min-height: 460px;
-}
-
-.cardSliderInit .slick-dots {
-  display: none !important;
-}
-
 .no-margin-bottom {
   margin: 0 !important;
 }
@@ -1111,59 +702,14 @@ a {
   padding: 0 20px;
 }
 
-.ios-font-fix {
-  -webkit-text-size-adjust: 100%;
-}
-
-.long-text-fix {
-  /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-.centered-content-title-holder {
-  margin: 0 0 60px;
-}
-
-.centered-content-title-holder h2 {
-  display: block;
-  font-family: "Titling raleway FB Extd Bd", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: 1px;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.white-title h2 {
-  color: #ffffff;
-}
-
 .fadeIn,
 .staggerFadeIn,
 .staggerFadeInInsta {
   opacity: 0;
 }
 
-.slick-cloned .staggerFadeIn,
-.slick-cloned .staggerFadeInInsta {
-  opacity: 1;
-}
-
-/* ==================  Reponsive CSS  ================== */
-/* Tablet Portrait size to standard 960 (devices and browsers) */
+/*------------ Reponsive CSS ------------*/
+/*------------ Small Desktop / Tablet Styling ------------*/
 @media only screen and (min-width: 980px) and (max-width: 1400px) {
   .logo-container {
     width: 35px;
@@ -1189,30 +735,6 @@ a {
   .main-header-cta-right-holder {
     margin: auto 0 auto auto;
   }
-  .sub-header-cta-middle-holder {
-    width: 380px;
-  }
-  .cta-middle-text-holder {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    padding: 10px 20px;
-    height: 30px;
-  }
-  .search-field-dropdown-container {
-    width: 920px;
-  }
-  .search-field-dropdown-container input {
-    padding-left: 40px;
-  }
-  .search-field-close-holder {
-    right: 40px;
-  }
-  .sub-header-cta-left-holder,
-  .sub-header-cta-right-holder,
   .logo-container {
     margin: 0 15px;
   }
@@ -1224,7 +746,7 @@ a {
     width: 305px;
   }
   .footer-sign-up-title-holder {
-    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1244,14 +766,74 @@ a {
   .footer-line-divider {
     width: calc(960px - 40px);
   }
+  .fifty-spacer {
+    padding-top: 30px;
+  }
+  .sixty-spacer,
+  .eighty-spacer {
+    padding-top: 40px;
+  }
+  .one-hundred-spacer {
+    padding-top: 60px;
+  }
+  .fifty-padding-both {
+    padding: 0 20px;
+  }
+  .content-block {
+    width: 960px;
+  }
+  .one-flex-margin-container {
+    width: 960px;
+  }
+  .flex-content-block {
+    width: 960px;
+  }
+  .one-block-container {
+    width: 960px;
+  }
+  .half-block-container {
+    width: 450px;
+    margin: 0 15px;
+  }
+  .half-flex-container {
+    width: 450px;
+    margin: 0 15px;
+  }
+  .third-flex-container {
+    width: 275px;
+    margin: 0 15px;
+  }
+  .third-block-container {
+    width: 300px;
+  }
+  .fourth-block-container {
+    width: 220px;
+  }
+  .half-block-image-holder {
+    width: 460px;
+  }
+  .centered-content-title-holder {
+    margin: 0 0 50px;
+  }
+  .centered-content-title-holder h2 {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+  }
+  body {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+  }
 }
 
-/*
-Hidden Classes: .hide-on-responsive,
-Visible Classes: .show-on-responsive
-
-Tablet Portrait size to standard 960 (devices and browsers)
-*/
+/*------------ Mobile Styling ------------*/
 @media only screen and (min-width: 1px) and (max-width: 979px) {
   .mobile-header {
     display: block;
@@ -1309,7 +891,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     padding: 9px 0;
     margin: auto;
     background-color: #797157;
-    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -1373,7 +955,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     color: #757575;
   }
   .mobile-main-menu-holder ul li.mob-tier-0 {
-    font-family: "Titling raleway FB Cond Standard", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1390,7 +972,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     cursor: pointer;
   }
   .mobile-main-menu-holder ul li.mob-tier-1 {
-    font-family: "Titling raleway FB Wd Med", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -1453,7 +1035,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     margin: auto;
     color: #eaeaea;
   }
-  /* ==================  Pop up sign up form ================== */
+  /*------------ Pop up sign up form------------*/
   .pop-up-container {
     position: absolute;
     top: 60%;
@@ -1463,7 +1045,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     margin: auto;
   }
   .pop-up-container h3 {
-    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1507,7 +1089,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     display: none !important;
   }
   .cta-middle-text-holder {
-    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 7px;
@@ -1516,7 +1098,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     height: 30px;
   }
   .footer-sign-up-title-holder {
-    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1671,7 +1253,7 @@ Tablet Portrait size to standard 960 (devices and browsers)
     margin: 0 0 30px;
   }
   .centered-content-title-holder h2 {
-    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

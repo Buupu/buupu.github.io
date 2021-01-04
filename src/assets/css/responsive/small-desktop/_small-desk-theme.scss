@@ -1,0 +1,73 @@
+//Spacers
+.fifty-spacer {
+  padding-top: 30px;
+}
+
+.sixty-spacer,
+.eighty-spacer {
+  padding-top: 40px;
+}
+
+.one-hundred-spacer {
+  padding-top: 60px;
+}
+
+.fifty-padding-both {
+  padding: 0 20px;
+}
+
+//All Containers & Holders
+.content-block {
+  width: 960px;
+}
+
+.one-flex-margin-container {
+  width: 960px;
+}
+
+.flex-content-block {
+  width: 960px;
+}
+
+.one-block-container {
+  width: 960px;
+}
+
+.half-block-container {
+  width: 450px;
+  margin: 0 15px;
+}
+
+.half-flex-container {
+  width: 450px;
+  margin: 0 15px;
+}
+
+.third-flex-container {
+  width: 275px;
+  margin: 0 15px;
+}
+
+.third-block-container {
+  width: 300px;
+}
+
+.fourth-block-container {
+  width: 220px;
+}
+
+.half-block-image-holder {
+  width: 460px;
+}
+
+// Titles
+.centered-content-title-holder {
+  margin: 0 0 50px;
+  h2 {
+    @include font-raleway-normal-reg(16px, 22px, 0.8px);
+  }
+}
+// Fonts
+body {
+  @include font-raleway-normal-reg(14px, 22px, -0.1px);
+}

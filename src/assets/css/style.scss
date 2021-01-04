@@ -1,13 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  vertical-align: top;
-}
-
-/* ==================  Theme CSS  ================== */
+/*------------ Theme CSS ------------*/
 @import "variables";
 
 @import "typography";
@@ -20,14 +11,12 @@
 
 @import "footer";
 
-/* ==================  Page CSS  ================== */
+/*------------ Page CSS ------------*/
 
-/* ==================  Misc CSS  ================== */
+/*------------ Misc CSS ------------*/
 @import "misc";
 
 @import "animations";
 
-@import "buttons";
-
-/* ==================  Reponsive CSS  ================== */
+/*------------ Reponsive CSS ------------*/
 @import "responsive/responsive";

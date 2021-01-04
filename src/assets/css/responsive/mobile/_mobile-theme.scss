@@ -134,7 +134,7 @@
 .centered-content-title-holder {
   margin: 0 0 30px;
   h2 {
-    @include font-titling-raleway-extended-bold(12px, 14px, 0.6px);
+    @include font-raleway-normal-reg(12px, 14px, 0.6px);
   }
 }
 

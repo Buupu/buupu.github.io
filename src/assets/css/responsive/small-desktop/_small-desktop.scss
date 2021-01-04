@@ -1,8 +1,8 @@
-/* Tablet Portrait size to standard 960 (devices and browsers) */
+/*------------ Small Desktop / Tablet Styling ------------*/
 @media only screen and (min-width: 980px) and (max-width: 1400px) {
-  //Small desktop theme styling
-
   @import "small-desk-header";
 
   @import "small-desk-footer";
+
+  @import "small-desk-theme";
 }

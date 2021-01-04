@@ -1,0 +1,57 @@
+.footer-sign-up-title-holder {
+  @include font-titling-raleway-extended-bold(16px, 22px, 0.8px);
+  margin-bottom: 60px;
+}
+
+.footer-sign-up-legal-holder p,
+.footer-sign-up-legal-holder label {
+  width: 80%;
+}
+
+.footer-bottom-flex-container {
+  width: 100%;
+}
+
+.footer-left-holder {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-line-divider {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-social-links-holder ul {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.footer-social-links-holder ul li:nth-child(1) {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.footer-logo-list-container {
+  margin: 60px 0;
+  ul li {
+    margin: 0 10px 10px 0;
+  }
+}
+
+.footer-logo-list-container ul li img {
+  height: 30px;
+}
+
+.footer-right-holder {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-bottom-links-holder {
+  margin-bottom: 60px;
+}
+
+.footer-logo-holder {
+  width: 90px;
+}

@@ -1,0 +1,265 @@
+.mobile-header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid $off-white;
+  background-color: $white;
+  z-index: 9999;
+}
+
+.mobile-header.is-sticky {
+  position: fixed;
+  top: -30px;
+}
+.sub-header-cta-left-holder {
+  margin: 0;
+  width: 60%;
+}
+
+.sub-header-cta-right-holder,
+.logo-container {
+  margin: 0;
+  width: 50%;
+}
+
+.sub-header-cta-right-holder ul li:nth-child(1) {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.sub-header-cta-right-holder ul li:nth-last-child(1) {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.logo-holder {
+  width: 30px;
+}
+
+.mobile-header-foot-container {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 83px;
+  z-index: 9998;
+  @include transition(all 0.3s ease-in-out);
+}
+
+.mobile-header-foot-container.is-sticky {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-header-foot-cta-holder {
+  display: block;
+  position: relative;
+  width: 80%;
+  padding: 9px 0;
+  margin: auto;
+  background-color: $gold;
+  @include font-titling-raleway-extended-bold(10px, normal, 0.5px);
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-header-cta-right-holder {
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  ul li {
+    margin: 0;
+    a {
+      @include font-titling-raleway-normal-reg(10px, 10px, 1px);
+      padding-top: 9px;
+    }
+  }
+}
+
+.mobile-menu-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 80px;
+  z-index: 9999;
+  background-color: $white;
+  overflow-x: scroll;
+  border-top: 1px solid $off-white;
+}
+
+.mobile-menu-container.is-sticky {
+  top: 53px;
+}
+
+.mobile-main-menu-holder {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 40px auto 60px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: block;
+      padding: 0;
+      margin: 0;
+      a {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        color: $dark-grey;
+      }
+    }
+  }
+}
+
+.mobile-main-menu-holder ul li.mob-tier-0 {
+  @include font-titling-raleway-condensed-standard(16px, 16px, 0.8px);
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.menu-title-tier-0 {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.mobile-main-menu-holder ul li.mob-tier-1 {
+  @include font-titling-raleway-wide-med(10px, 10px, 0.5px);
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin: 0 20px 20px;
+}
+
+.mobile-main-menu-holder ul li.mob-tier-1:nth-child(1) {
+  margin: 0 20px 20px;
+  margin-top: 20px;
+}
+
+.mobile-main-menu-holder ul li.mob-tier-1:nth-last-child(1) {
+  margin: 0 20px;
+  margin-top: 10px;
+}
+
+.mobile-main-menu-holder ul li.mob-tier-0.has-children .sub-menu {
+  display: none;
+}
+
+.mobile-menu-toggle-icon {
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 9px;
+  right: 0;
+  margin-top: -16px;
+  //background-image: url(assets/img/arrow-down-navy.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 17px 9px;
+}
+
+.mobile-menu-footer-container {
+  display: block;
+  position: relative;
+  padding: 0 0 120px;
+  margin: 0;
+}
+
+.mobile-search-holder {
+  display: block;
+  position: relative;
+  width: 90%;
+  padding: 30px 0;
+  margin: auto;
+  input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px 7px;
+    padding-left: 30px;
+    margin: 0;
+    border: 1px solid $light-grey;
+    color: $light-grey;
+    //background-image: url(assets/img/search-icon-grey.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: left 10px center;
+    background-color: transparent;
+  }
+}
+
+.sub-header-county-select-holder {
+  width: 90%;
+  margin: auto;
+  color: $light-grey;
+}
+
+/* ==================  Pop up sign up form ================== */
+.pop-up-container {
+  position: absolute;
+  top: 60%;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin: auto;
+  h3 {
+    @include font-titling-raleway-extended-bold(12px, 14px, 0.6px);
+    padding: 60px 40px 25px;
+  }
+}
+
+.pop-up-close-icon {
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.half-input-holder-popup:nth-of-type(even),
+.half-input-holder-popup:nth-of-type(odd) {
+  margin-left: 0;
+}
+
+.pop-up-form-holder {
+  width: 100%;
+  padding: 25px 0 0;
+}
+
+.half-input-holder-popup,
+.full-input-holder-popup {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.submit-holder-popup {
+  float: none;
+  margin: auto auto 30px;
+}
+
+.sub-header-cta-middle-holder {
+  width: 100%;
+}
+
+.sub-header-cta-middle-holder .slick-next {
+  display: none !important;
+}
+
+.sub-header-cta-middle-holder .slick-prev {
+  display: none !important;
+}
+
+.cta-middle-text-holder {
+  @include font-titling-raleway-extended-bold(7px, normal, 0.2px);
+  height: 30px;
+}

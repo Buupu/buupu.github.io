@@ -1,0 +1,147 @@
+/* Hide and show classes */
+.hide-on-responsive {
+  display: none !important;
+}
+
+.show-on-responsive {
+  display: block !important;
+}
+
+//Spacers
+.fifty-spacer {
+  padding-top: 30px;
+}
+
+.sixty-spacer,
+.eighty-spacer {
+  padding-top: 40px;
+}
+
+.one-hundred-spacer {
+  padding-top: 60px;
+}
+
+.fifty-padding-both {
+  padding: 0 20px;
+}
+
+//Burger menu
+.mobile-burger-outer-container {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 11px;
+  right: 0;
+  z-index: 99;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.burger-holder {
+  display: block;
+  margin: 9px 0;
+  padding: 0;
+}
+
+.burger-holder .line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: $navy;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-holder.is-sticky .line {
+  background-color: $black;
+}
+
+.burger-holder .line:nth-child(2) {
+  display: none;
+}
+
+.burger-holder.is-active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.burger-holder.is-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.burger-holder.is-active .line:nth-child(1),
+.burger-holder.is-active .line:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.burger-holder.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
+.burger-holder.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-2px) rotate(90deg);
+  -ms-transform: translateY(-2px) rotate(90deg);
+  -o-transform: translateY(-2px) rotate(90deg);
+  transform: translateY(-2px) rotate(90deg);
+}
+
+//All Containers & Holders
+.content-block,
+.one-flex-margin-container,
+.flex-content-block {
+  width: 90%;
+  padding: 0;
+  margin: auto;
+}
+
+.one-block-container,
+.half-block-container,
+.third-block-container,
+.fourth-block-container,
+.full-width-container,
+.full-half-container,
+.full-third-container,
+.full-fourth-container,
+.half-flex-container,
+.third-flex-container,
+.full-half-flex-container {
+  width: 100%;
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+
+.half-block-image-holder {
+  width: 100%;
+}
+
+// Titles
+.centered-content-title-holder {
+  margin: 0 0 30px;
+  h2 {
+    @include font-titling-raleway-extended-bold(12px, 14px, 0.6px);
+  }
+}
+
+.no-desk {
+  display: block;
+}
+
+.error-page-text-holder {
+  width: 100%;
+}

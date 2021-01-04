@@ -1,0 +1,20 @@
+.footer-sign-up-title-holder {
+  @include font-titling-raleway-extended-bold(18px, 26px, 0.9px);
+}
+
+.footer-sign-up-legal-holder p,
+.footer-sign-up-legal-holder label {
+  width: 410px;
+}
+
+.footer-bottom-flex-container {
+  width: 960px;
+}
+
+.footer-left-holder {
+  width: 740px;
+}
+
+.footer-line-divider {
+  width: calc(960px - 40px);
+}

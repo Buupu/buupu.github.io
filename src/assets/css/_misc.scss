@@ -222,7 +222,7 @@ a {
   margin: 0 0 60px;
   h2 {
     display: block;
-    @include font-titling-gothic-extended-bold(20px, normal, 1px);
+    @include font-titling-raleway-extended-bold(20px, normal, 1px);
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -231,4 +231,11 @@ a {
 
 .white-title h2 {
   color: $white;
+}
+
+@media only screen and (min-width: 1099px) and (max-width: 1400px) {
+}
+
+// MOBILE STYLING
+@media only screen and (min-width: 1px) and (max-width: 1100px) {
 }

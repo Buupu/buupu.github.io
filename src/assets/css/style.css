@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
 *,
 *::before,
 *::after {
@@ -23,8 +24,7 @@ h5 {
 /* ==================  Site Flex Settings  ================== */
 /* ==================  Responsive Fonts Settings  ================== */
 body {
-  font-family: "Titling Gothic FB Nrm Reg", sans-serif;
-  font-display: block;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -221,13 +221,171 @@ body {
   margin: 0;
 }
 
-.main-menu-container {
+/* ==================  Sub Header  ================== */
+.sub-header-container {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-header-cta-left-holder {
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  padding: 3px 0;
+  margin: 0 20px;
+}
+
+.sub-header-cta-left-holder a {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #757575;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sub-header-cta-left-holder a:hover {
+  opacity: 0.4;
+}
+
+.sub-header-cta-middle-holder {
+  display: block;
+  position: relative;
+  width: 470px;
+  height: 30px;
+  padding: 0;
+  margin: auto;
+}
+
+.cta-middle-text-holder {
+  display: block;
+  position: relative;
+  padding: 10px 20px 8px;
+  margin: auto;
+  font-family: "Titling raleway FB Extd Bd", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cta-middle-text-holder a {
+  color: #ffffff;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cta-middle-text-holder a:hover {
+  opacity: 0.4;
+}
+
+.sub-header-cta-middle-holder .slick-next {
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 13px;
+  top: 9px;
+  right: -31px;
+  background-size: 7px 13px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sub-header-cta-middle-holder .slick-next:hover {
+  opacity: 0.4;
+}
+
+.search-field-close-holder {
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 50%;
+  right: 60px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-position: center;
+  background-size: 19px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.search-field-close-holder:hover {
+  opacity: 0.4;
+}
+
+/* ==================  Main Header  ================== */
+.main-header {
   display: block;
   position: absolute;
   width: 100%;
   top: 0;
+  border-bottom: 1px solid #f5f5f5;
+  z-index: 9999;
+}
+
+.main-header.is-sticky {
+  position: fixed;
+  top: -30px;
+}
+
+.main-header-container {
+  display: block;
+  position: relative;
   padding: 0;
-  margin: 22px auto 0;
+  margin: 0;
+}
+
+.logo-container {
+  display: block;
+  position: relative;
+  width: 40px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.logo-holder {
+  display: block;
+  position: relative;
+  width: 40px;
+  padding: 14px 0 13px;
+  margin: 0;
+  margin-right: auto;
+  z-index: 9;
+}
+
+.logo-holder img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu-container {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: auto;
 }
 
 .main-menu-container ul {
@@ -236,27 +394,520 @@ body {
   margin: 0;
   font-size: 0;
   text-align: center;
+  line-height: 0;
 }
 
 .main-menu-container ul li {
-  display: inline-block;
+  display: block;
   padding: 0;
   margin: 0;
 }
 
 .main-menu-container ul li a {
-  display: block;
-  padding: 0 10px 17px;
+  display: inline-block;
   margin: 0;
-  font-family: "Titling Gothic FB Cond Standard", sans-serif;
-  font-display: block;
+  font-family: "Titling raleway FB Cond Standard", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: 0.8px;
   color: #757575;
+}
+
+.main-header-cta-right-holder {
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: auto 0 auto auto;
+  z-index: 9;
+}
+
+.main-header-cta-right-holder ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: right;
+}
+
+.main-header-cta-right-holder ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.main-header-cta-right-holder ul li a {
+  display: block;
+  padding: 10px 14px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  background-color: #c70039;
+  color: white;
+  opacity: 1;
+  border-radius: 8px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.main-header-cta-right-holder ul li a:hover {
+  opacity: 0.4;
+}
+
+.main-header-cta-right-holder ul li a span {
+  display: inline-block;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
+.main-header-cta-right-holder img {
+  vertical-align: middle;
+}
+
+.main-header-cta-middle-holder {
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: auto 0 auto auto;
+  z-index: 9;
+}
+
+.main-header-cta-middle-holder ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: right;
+}
+
+.main-header-cta-middle-holder ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.main-header-cta-middle-holder ul li a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #808080;
+  opacity: 1;
+  position: relative;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.main-header-cta-middle-holder ul li a .active-marker {
+  width: 6px;
+  height: 6px;
+  bottom: -10px;
+  border-radius: 6px;
+  position: absolute;
+  background: transparent;
+  left: calc(50% - 3px);
+  background: transparent;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.main-header-cta-middle-holder ul li a:hover {
+  opacity: 0.4;
+}
+
+.main-header-cta-middle-holder ul li a.is-active {
+  color: #c70039;
+}
+
+.main-header-cta-middle-holder ul li a.is-active .active-marker {
+  background: #c70039;
+}
+
+.main-header-cta-middle-holder ul li a span {
+  display: inline-block;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
+.main-header-cta-middle-holder img {
+  vertical-align: middle;
+}
+
+.main-header-cta-right-holder ul li:nth-last-child(even) {
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.main-header-cta-middle-holder ul li:nth-last-child(even) {
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+/* ==================  Main Menu Dropdown Containers ================== */
+.main-menu-container ul li.tier-0 .sub-menu-wrap {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  min-height: 220px;
+  margin-top: 3px;
+  left: 0;
+  background-color: rgba(245, 245, 245, 0.99);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-menu-container ul li:hover .sub-menu-wrap {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==================  Main Menu Dropdown Tier 0 ================== */
+.main-menu-container ul li.tier-0 {
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.main-menu-container ul li.tier-0 a {
+  color: #757575;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.main-menu-container ul li.tier-0:hover a {
+  color: rgba(117, 117, 117, 0.4);
+}
+
+.main-menu-container ul li.tier-0.active {
+  border-bottom: 3px solid #757575;
+}
+
+.main-menu-container ul li.tier-0.active a {
+  color: #111d5e;
+}
+
+.main-menu-container ul li.tier-0:hover {
+  color: #111d5e;
+  border-bottom: 3px solid #757575;
+}
+
+/* Highlight the shop menu item */
+.main-menu-container ul li a.shop-menu-item {
+  color: #111d5e;
+}
+
+.main-menu-container ul li a.parent-active {
+  color: rgba(117, 117, 117, 0.4);
+}
+
+.main-menu-container ul li a.active {
+  color: rgba(117, 117, 117, 0.4);
+}
+
+/* ==================  Main Menu Dropdown Tier 1 ================== */
+.main-menu-container ul li .sub-menu-wrap ul.sub-menu {
+  display: block;
+  position: relative;
+  padding: 35px 0 25px;
+  margin: 0;
+}
+
+.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 {
+  display: block;
+  width: 350px;
+  margin: auto;
+  text-align: left;
+  padding-left: 65px;
+}
+
+.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 a {
+  display: inline-block;
+  padding: 0 0 15px;
+  margin: 0;
+  font-family: "Titling raleway FB Wd Med", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  color: #757575;
+}
+
+.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 a {
+  color: #757575;
+  border: 0;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 a:hover {
+  color: rgba(117, 117, 117, 0.4);
+}
+
+.menu-image-container {
+  display: block;
+  position: absolute;
+  height: 100%;
+  min-height: 220px;
+  top: 0;
+  right: 0;
+  overflow: visible;
+}
+
+.menu-image-holder {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 380px;
+  min-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-menu-container ul li.tier-1:hover .menu-image-holder {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==================  Pop up sign up form ================== */
+.pop-up-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  width: 730px;
+  height: 660px;
+  background-color: #f5f5f5;
+  color: #111d5e;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 50px 105px;
+}
+
+.pop-up-container h3 {
+  text-align: center;
+  font-family: "Titling raleway FB Extd Bd", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: -0.3px;
   text-transform: uppercase;
+  padding: 0 10px 35px;
+}
+
+.pop-up-container p {
+  text-align: center;
+}
+
+.pop-up-background {
+  display: block;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #272726;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.pop-up-background.on-crew {
+  opacity: 0.9;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.pop-up-close-icon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.pop-up-container.show-pop-up {
+  display: block;
+}
+
+.pop-up-form-holder {
+  width: 520px;
+  margin: 0 auto;
+  padding: 35px 0 0;
+}
+
+.half-input-holder-popup {
+  width: 240px;
+  display: block;
+  float: left;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.half-input-holder-popup input {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+  border: 2px solid #111d5e;
+  padding: 0 15px;
+  color: #757575;
+}
+
+.half-input-holder-popup:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+.half-input-holder-popup:nth-of-type(even) {
+  margin-left: 20px;
+}
+
+.full-input-holder-popup {
+  width: 520px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.full-input-holder-popup input {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+  border: 2px solid #111d5e;
+  padding: 0 15px;
+  color: #757575;
+}
+
+.full-input-holder-popup textarea {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #757575;
+  width: 100%;
+  height: 400px;
+  padding: 20px 15px;
+  border: 2px solid #111d5e;
+}
+
+.full-input-holder-popup select {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+  border: 2px solid #111d5e;
+  padding: 0 20px;
+  color: #757575;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+
+.full-input-holder-popup label {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #757575;
+}
+
+.full-input-holder-popup label a {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  color: #111d5e;
+  opacity: 1;
+  border-bottom: 1px solid #111d5e;
+}
+
+.full-input-holder-popup label a:hover {
+  opacity: 0.4;
+}
+
+.pop-up-form-holder .checkbox-holder input[type="checkbox"] {
+  display: inline-block;
+  float: left;
+}
+
+.pop-up-form-holder .checkbox-holder span {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+
+.submit-holder-popup {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  width: 150px;
+  margin-bottom: 30px;
+  float: left;
+  opacity: 1;
+}
+
+.submit-holder-popup input {
+  width: 100%;
+  font-family: "Titling raleway FB Extd Med", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #111d5e;
+  text-transform: uppercase;
+  background-color: #111d5e;
+  padding: 11px 23px;
+  cursor: pointer;
+}
+
+.submit-holder-popup:hover {
+  opacity: 0.4;
 }
 
 /* ==================  Page CSS  ================== */
@@ -283,7 +934,7 @@ input[type="checkbox"] {
   padding: 0;
   height: 15px;
   width: 15px;
-  border: 2px solid #1d33ce;
+  border: 2px solid #111d5e;
   border-radius: 0;
   -webkit-appearance: none;
   background-color: #ffffff;
@@ -352,7 +1003,7 @@ a {
 }
 
 .mid-grey-background {
-  background-color: #707070;
+  background-color: #808080;
 }
 
 .light-grey-background {
@@ -360,7 +1011,7 @@ a {
 }
 
 .blue-background {
-  background-color: #1d33ce;
+  background-color: #111d5e;
 }
 
 .twenty-spacer {
@@ -485,8 +1136,7 @@ a {
 
 .centered-content-title-holder h2 {
   display: block;
-  font-family: "Titling Gothic FB Extd Bd", sans-serif;
-  font-display: block;
+  font-family: "Titling raleway FB Extd Bd", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -510,5 +1160,529 @@ a {
 .slick-cloned .staggerFadeIn,
 .slick-cloned .staggerFadeInInsta {
   opacity: 1;
+}
+
+/* ==================  Reponsive CSS  ================== */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 980px) and (max-width: 1400px) {
+  .logo-container {
+    width: 35px;
+  }
+  .logo-holder {
+    width: 30px;
+    padding: 17px 0;
+  }
+  .header-search-container {
+    width: 180px;
+  }
+  .main-menu-container {
+    margin: auto 0 0;
+  }
+  .main-menu-container ul li a {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: 0.8px;
+  }
+  .main-header-cta-right-holder {
+    margin: auto 0 auto auto;
+  }
+  .sub-header-cta-middle-holder {
+    width: 380px;
+  }
+  .cta-middle-text-holder {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    padding: 10px 20px;
+    height: 30px;
+  }
+  .search-field-dropdown-container {
+    width: 920px;
+  }
+  .search-field-dropdown-container input {
+    padding-left: 40px;
+  }
+  .search-field-close-holder {
+    right: 40px;
+  }
+  .sub-header-cta-left-holder,
+  .sub-header-cta-right-holder,
+  .logo-container {
+    margin: 0 15px;
+  }
+  .menu-image-holder {
+    min-width: 290px;
+    min-height: 153px;
+  }
+  .main-menu-container ul li .sub-menu-wrap ul.sub-menu li.tier-1 {
+    width: 305px;
+  }
+  .footer-sign-up-title-holder {
+    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.9px;
+  }
+  .footer-sign-up-legal-holder p,
+  .footer-sign-up-legal-holder label {
+    width: 410px;
+  }
+  .footer-bottom-flex-container {
+    width: 960px;
+  }
+  .footer-left-holder {
+    width: 740px;
+  }
+  .footer-line-divider {
+    width: calc(960px - 40px);
+  }
+}
+
+/*
+Hidden Classes: .hide-on-responsive,
+Visible Classes: .show-on-responsive
+
+Tablet Portrait size to standard 960 (devices and browsers)
+*/
+@media only screen and (min-width: 1px) and (max-width: 979px) {
+  .mobile-header {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #ffffff;
+    z-index: 9999;
+  }
+  .mobile-header.is-sticky {
+    position: fixed;
+    top: -30px;
+  }
+  .sub-header-cta-left-holder {
+    margin: 0;
+    width: 60%;
+  }
+  .sub-header-cta-right-holder,
+  .logo-container {
+    margin: 0;
+    width: 50%;
+  }
+  .sub-header-cta-right-holder ul li:nth-child(1) {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .sub-header-cta-right-holder ul li:nth-last-child(1) {
+    margin: 0;
+    margin-left: 10px;
+  }
+  .logo-holder {
+    width: 30px;
+  }
+  .mobile-header-foot-container {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 83px;
+    z-index: 9998;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-header-foot-container.is-sticky {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .mobile-header-foot-cta-holder {
+    display: block;
+    position: relative;
+    width: 80%;
+    padding: 9px 0;
+    margin: auto;
+    background-color: #797157;
+    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .main-header-cta-right-holder {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+  }
+  .main-header-cta-right-holder ul li {
+    margin: 0;
+  }
+  .main-header-cta-right-holder ul li a {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    padding-top: 9px;
+  }
+  .mobile-menu-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    z-index: 9999;
+    background-color: #ffffff;
+    overflow-x: scroll;
+    border-top: 1px solid #f5f5f5;
+  }
+  .mobile-menu-container.is-sticky {
+    top: 53px;
+  }
+  .mobile-main-menu-holder {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 40px auto 60px;
+  }
+  .mobile-main-menu-holder ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-main-menu-holder ul li {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-main-menu-holder ul li a {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: #757575;
+  }
+  .mobile-main-menu-holder ul li.mob-tier-0 {
+    font-family: "Titling raleway FB Cond Standard", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+  }
+  .menu-title-tier-0 {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .mobile-main-menu-holder ul li.mob-tier-1 {
+    font-family: "Titling raleway FB Wd Med", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin: 0 20px 20px;
+  }
+  .mobile-main-menu-holder ul li.mob-tier-1:nth-child(1) {
+    margin: 0 20px 20px;
+    margin-top: 20px;
+  }
+  .mobile-main-menu-holder ul li.mob-tier-1:nth-last-child(1) {
+    margin: 0 20px;
+    margin-top: 10px;
+  }
+  .mobile-main-menu-holder ul li.mob-tier-0.has-children .sub-menu {
+    display: none;
+  }
+  .mobile-menu-toggle-icon {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 9px;
+    right: 0;
+    margin-top: -16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 17px 9px;
+  }
+  .mobile-menu-footer-container {
+    display: block;
+    position: relative;
+    padding: 0 0 120px;
+    margin: 0;
+  }
+  .mobile-search-holder {
+    display: block;
+    position: relative;
+    width: 90%;
+    padding: 30px 0;
+    margin: auto;
+  }
+  .mobile-search-holder input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px 7px;
+    padding-left: 30px;
+    margin: 0;
+    border: 1px solid #eaeaea;
+    color: #eaeaea;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: left 10px center;
+    background-color: transparent;
+  }
+  .sub-header-county-select-holder {
+    width: 90%;
+    margin: auto;
+    color: #eaeaea;
+  }
+  /* ==================  Pop up sign up form ================== */
+  .pop-up-container {
+    position: absolute;
+    top: 60%;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+  }
+  .pop-up-container h3 {
+    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    padding: 60px 40px 25px;
+  }
+  .pop-up-close-icon {
+    top: 20px;
+    right: 20px;
+    width: 15px;
+  }
+  .pop-up-close-icon img {
+    width: 100%;
+    height: auto;
+  }
+  .half-input-holder-popup:nth-of-type(even),
+  .half-input-holder-popup:nth-of-type(odd) {
+    margin-left: 0;
+  }
+  .pop-up-form-holder {
+    width: 100%;
+    padding: 25px 0 0;
+  }
+  .half-input-holder-popup,
+  .full-input-holder-popup {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .submit-holder-popup {
+    float: none;
+    margin: auto auto 30px;
+  }
+  .sub-header-cta-middle-holder {
+    width: 100%;
+  }
+  .sub-header-cta-middle-holder .slick-next {
+    display: none !important;
+  }
+  .sub-header-cta-middle-holder .slick-prev {
+    display: none !important;
+  }
+  .cta-middle-text-holder {
+    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7px;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    height: 30px;
+  }
+  .footer-sign-up-title-holder {
+    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    margin-bottom: 60px;
+  }
+  .footer-sign-up-legal-holder p,
+  .footer-sign-up-legal-holder label {
+    width: 80%;
+  }
+  .footer-bottom-flex-container {
+    width: 100%;
+  }
+  .footer-left-holder {
+    width: 90%;
+    margin: auto;
+  }
+  .footer-line-divider {
+    width: 90%;
+    margin: auto;
+  }
+  .footer-social-links-holder ul {
+    margin-top: 60px;
+    text-align: left;
+  }
+  .footer-social-links-holder ul li:nth-child(1) {
+    margin: 0;
+    margin-right: 15px;
+  }
+  .footer-logo-list-container {
+    margin: 60px 0;
+  }
+  .footer-logo-list-container ul li {
+    margin: 0 10px 10px 0;
+  }
+  .footer-logo-list-container ul li img {
+    height: 30px;
+  }
+  .footer-right-holder {
+    width: 90%;
+    margin: auto;
+  }
+  .footer-bottom-links-holder {
+    margin-bottom: 60px;
+  }
+  .footer-logo-holder {
+    width: 90px;
+  }
+  /* Hide and show classes */
+  .hide-on-responsive {
+    display: none !important;
+  }
+  .show-on-responsive {
+    display: block !important;
+  }
+  .fifty-spacer {
+    padding-top: 30px;
+  }
+  .sixty-spacer,
+  .eighty-spacer {
+    padding-top: 40px;
+  }
+  .one-hundred-spacer {
+    padding-top: 60px;
+  }
+  .fifty-padding-both {
+    padding: 0 20px;
+  }
+  .mobile-burger-outer-container {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 11px;
+    right: 0;
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .burger-holder {
+    display: block;
+    margin: 9px 0;
+    padding: 0;
+  }
+  .burger-holder .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #21292e;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .burger-holder.is-sticky .line {
+    background-color: #272726;
+  }
+  .burger-holder .line:nth-child(2) {
+    display: none;
+  }
+  .burger-holder.is-active {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .burger-holder.is-active .line:nth-child(2) {
+    width: 0px;
+  }
+  .burger-holder.is-active .line:nth-child(1),
+  .burger-holder.is-active .line:nth-child(3) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .burger-holder.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  .burger-holder.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-2px) rotate(90deg);
+    transform: translateY(-2px) rotate(90deg);
+  }
+  .content-block,
+  .one-flex-margin-container,
+  .flex-content-block {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+  .one-block-container,
+  .half-block-container,
+  .third-block-container,
+  .fourth-block-container,
+  .full-width-container,
+  .full-half-container,
+  .full-third-container,
+  .full-fourth-container,
+  .half-flex-container,
+  .third-flex-container,
+  .full-half-flex-container {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+  .half-block-image-holder {
+    width: 100%;
+  }
+  .centered-content-title-holder {
+    margin: 0 0 30px;
+  }
+  .centered-content-title-holder h2 {
+    font-family: "Titling raleway FB Extd Bd", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+  }
+  .no-desk {
+    display: block;
+  }
+  .error-page-text-holder {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

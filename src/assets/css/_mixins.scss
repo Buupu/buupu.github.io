@@ -1,11 +1,8 @@
 /* ==================  Site Fonts  ================== */
-// @include font-source-hel-bold-upper(65px, 65px, 2.5px);
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
 
-//Normal Regular
-// @include font-titling-gothic-normal-reg(16px, 24px, -0.2px);
-@mixin font-titling-gothic-normal-reg($size: false, $lh: false, $ls: false) {
-  font-family: "Titling Gothic FB Nrm Reg", sans-serif;
-  font-display: block;
+@mixin font-titling-raleway-normal-reg($size: false, $lh: false, $ls: false) {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {
@@ -20,10 +17,9 @@
 }
 
 //Normal Medium
-// @include font-titling-gothic-normal-med(16px, 24px, -0.2px);
-@mixin font-titling-gothic-normal-med($size: false, $lh: false, $ls: false) {
-  font-family: "Titling Gothic FB Nrm Med", sans-serif;
-  font-display: block;
+// @include font-titling-raleway-normal-med(16px, 24px, -0.2px);
+@mixin font-titling-raleway-normal-med($size: false, $lh: false, $ls: false) {
+  font-family: "Titling raleway FB Nrm Med", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {
@@ -38,10 +34,9 @@
 }
 
 //Wide Medium
-// @include font-titling-gothic-wide-med(50px, 52px, -0.5px);
-@mixin font-titling-gothic-wide-med($size: false, $lh: false, $ls: false) {
-  font-family: "Titling Gothic FB Wd Med", sans-serif;
-  font-display: block;
+// @include font-titling-raleway-wide-med(50px, 52px, -0.5px);
+@mixin font-titling-raleway-wide-med($size: false, $lh: false, $ls: false) {
+  font-family: "Titling raleway FB Wd Med", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {
@@ -56,10 +51,9 @@
 }
 
 //Extended Regular
-// @include font-titling-gothic-extended-reg(12px, 16px, 0.6px);
-@mixin font-titling-gothic-extended-reg($size: false, $lh: false, $ls: false) {
-  font-family: "Titling Gothic FB Extd Reg", sans-serif;
-  font-display: block;
+// @include font-titling-raleway-extended-reg(12px, 16px, 0.6px);
+@mixin font-titling-raleway-extended-reg($size: false, $lh: false, $ls: false) {
+  font-family: "Titling raleway FB Extd Reg", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {
@@ -74,9 +68,8 @@
 }
 
 //Extended Medium
-@mixin font-titling-gothic-extended-med($size: false, $lh: false, $ls: false) {
-  font-family: "Titling Gothic FB Extd Med", sans-serif;
-  font-display: block;
+@mixin font-titling-raleway-extended-med($size: false, $lh: false, $ls: false) {
+  font-family: "Titling raleway FB Extd Med", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {
@@ -91,10 +84,13 @@
 }
 
 //Extended Bold
-// @include font-titling-gothic-extended-bold(20px, 28px, 1.0px);
-@mixin font-titling-gothic-extended-bold($size: false, $lh: false, $ls: false) {
-  font-family: "Titling Gothic FB Extd Bd", sans-serif;
-  font-display: block;
+// @include font-titling-raleway-extended-bold(20px, 28px, 1.0px);
+@mixin font-titling-raleway-extended-bold(
+  $size: false,
+  $lh: false,
+  $ls: false
+) {
+  font-family: "Titling raleway FB Extd Bd", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {
@@ -109,13 +105,12 @@
 }
 
 //Condensed Standard
-@mixin font-titling-gothic-condensed-standard(
+@mixin font-titling-raleway-condensed-standard(
   $size: false,
   $lh: false,
   $ls: false
 ) {
-  font-family: "Titling Gothic FB Cond Standard", sans-serif;
-  font-display: block;
+  font-family: "Titling raleway FB Cond Standard", sans-serif;
   font-style: normal;
   font-weight: normal;
   @if $size {

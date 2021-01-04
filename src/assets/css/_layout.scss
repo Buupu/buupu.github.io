@@ -1,0 +1,172 @@
+body {
+  @include font-titling-gothic-normal-reg(16px, 24px, normal);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //color: $mid;
+  //background: rgb(23, 23, 23);
+  //background: linear-gradient(0deg, $gradientBottom 0%, $gradientTop 100%);
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.content {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.content-block {
+  display: block;
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+//Repeater Containers
+
+//Normal Block Container
+.one-block-container {
+  display: block;
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+
+.half-block-container {
+  display: block;
+  position: relative;
+  width: 560px;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.third-block-container {
+  display: block;
+  position: relative;
+  width: 360px;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.fourth-block-container {
+  display: block;
+  position: relative;
+  width: 280px;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+}
+
+//Percentage Repeater Containers
+.full-width-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.full-half-container {
+  display: block;
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.full-third-container {
+  display: block;
+  position: relative;
+  width: 33.33%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.full-fourth-container {
+  display: block;
+  position: relative;
+  width: 25%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+//Flexbox Containers
+.one-flex-container {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-content-block {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+
+.one-flex-margin-container {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+.half-flex-container {
+  display: block;
+  position: relative;
+  width: 560px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.third-flex-container {
+  display: block;
+  position: relative;
+  width: 360px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.full-width-flex-container {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.full-half-flex-container {
+  display: block;
+  position: relative;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}

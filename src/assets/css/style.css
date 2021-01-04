@@ -1,0 +1,514 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  vertical-align: top;
+}
+
+/* ==================  Theme CSS  ================== */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================  Site Fonts  ================== */
+/* ==================  Site Animations  ================== */
+/* ==================  Site Flex Settings  ================== */
+/* ==================  Responsive Fonts Settings  ================== */
+body {
+  font-family: "Titling Gothic FB Nrm Reg", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.content {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.content-block {
+  display: block;
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+.one-block-container {
+  display: block;
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+
+.half-block-container {
+  display: block;
+  position: relative;
+  width: 560px;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.third-block-container {
+  display: block;
+  position: relative;
+  width: 360px;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.fourth-block-container {
+  display: block;
+  position: relative;
+  width: 280px;
+  float: left;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.full-width-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.full-half-container {
+  display: block;
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.full-third-container {
+  display: block;
+  position: relative;
+  width: 33.33%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.full-fourth-container {
+  display: block;
+  position: relative;
+  width: 25%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.one-flex-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-content-block {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+
+.one-flex-margin-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+.half-flex-container {
+  display: block;
+  position: relative;
+  width: 560px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.third-flex-container {
+  display: block;
+  position: relative;
+  width: 360px;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.full-width-flex-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.full-half-flex-container {
+  display: block;
+  position: relative;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu-container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  margin: 22px auto 0;
+}
+
+.main-menu-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.main-menu-container ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu-container ul li a {
+  display: block;
+  padding: 0 10px 17px;
+  margin: 0;
+  font-family: "Titling Gothic FB Cond Standard", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #757575;
+  text-transform: uppercase;
+}
+
+/* ==================  Page CSS  ================== */
+/* ==================  Misc CSS  ================== */
+/*
+Hidden Classes: .hide-on-responsive,
+Visible Classes: .show-on-responsive,
+
+Misc */
+textarea,
+input,
+select {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  display: block;
+  float: left;
+  margin: 1px 10px 0 0;
+  padding: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #1d33ce;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked {
+  background-size: contain;
+}
+
+div {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 15px;
+}
+
+p:nth-last-child(1) {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -webkit-backface-visibility: hidden;
+  vertical-align: top;
+}
+
+a {
+  color: #272726;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+.white-background {
+  background-color: #ffffff;
+}
+
+.off-white-background {
+  background-color: #f5f5f5;
+}
+
+.black-background {
+  background-color: #272726;
+}
+
+.navy-background {
+  background-color: #21292e;
+}
+
+.gold-background {
+  background-color: #797157;
+}
+
+.dark-grey-background {
+  background-color: #757575;
+}
+
+.mid-grey-background {
+  background-color: #707070;
+}
+
+.light-grey-background {
+  background-color: #eaeaea;
+}
+
+.blue-background {
+  background-color: #1d33ce;
+}
+
+.twenty-spacer {
+  padding-top: 20px;
+}
+
+.thirty-spacer {
+  padding-top: 30px;
+}
+
+.forty-spacer {
+  padding-top: 40px;
+}
+
+.fifty-spacer {
+  padding-top: 50px;
+}
+
+.sixty-spacer {
+  padding-top: 60px;
+}
+
+.eighty-spacer {
+  padding-top: 80px;
+}
+
+.seventy-five-spacer {
+  padding-top: 75px;
+}
+
+.one-hundred-spacer {
+  padding-top: 100px;
+}
+
+.fifty-padding-both {
+  padding: 0 50px;
+}
+
+.top-push {
+  padding-top: 91px;
+}
+
+.hide-on-responsive {
+  display: block !important;
+}
+
+.show-on-responsive {
+  display: none !important;
+}
+
+.overflow-fix {
+  overflow: hidden;
+}
+
+.flex-bottom-content {
+  margin-top: auto;
+}
+
+.z-index-fix {
+  z-index: 999;
+}
+
+.middle-divider {
+  border-right: 1px solid #757575;
+}
+
+.no-desk {
+  display: none !important;
+}
+
+.add-flex-fix {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.flex-absolute-fix {
+  min-height: 460px;
+}
+
+.cardSliderInit .slick-dots {
+  display: none !important;
+}
+
+.no-margin-bottom {
+  margin: 0 !important;
+}
+
+.add-padding {
+  padding: 0 20px;
+}
+
+.ios-font-fix {
+  -webkit-text-size-adjust: 100%;
+}
+
+.long-text-fix {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.centered-content-title-holder {
+  margin: 0 0 60px;
+}
+
+.centered-content-title-holder h2 {
+  display: block;
+  font-family: "Titling Gothic FB Extd Bd", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.white-title h2 {
+  color: #ffffff;
+}
+
+.fadeIn,
+.staggerFadeIn,
+.staggerFadeInInsta {
+  opacity: 0;
+}
+
+.slick-cloned .staggerFadeIn,
+.slick-cloned .staggerFadeInInsta {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,234 @@
+/*
+Hidden Classes: .hide-on-responsive,
+Visible Classes: .show-on-responsive,
+
+Misc */
+
+textarea,
+input,
+select {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  display: block;
+  float: left;
+  margin: 1px 10px 0 0;
+  padding: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid $blue;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: $white;
+}
+
+input[type="checkbox"]:checked {
+  background-size: contain;
+}
+
+//Default div styling
+div {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 15px;
+}
+
+p:nth-last-child(1) {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -webkit-backface-visibility: hidden;
+  vertical-align: top;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+//Backgrounds
+.white-background {
+  background-color: $white;
+}
+
+.off-white-background {
+  background-color: $off-white;
+}
+
+.black-background {
+  background-color: $black;
+}
+
+.navy-background {
+  background-color: $navy;
+}
+
+.gold-background {
+  background-color: $gold;
+}
+
+.dark-grey-background {
+  background-color: $dark-grey;
+}
+
+.mid-grey-background {
+  background-color: $mid-grey;
+}
+
+.light-grey-background {
+  background-color: $light-grey;
+}
+
+.blue-background {
+  background-color: $blue;
+}
+
+//Spacers
+.twenty-spacer {
+  padding-top: 20px;
+}
+
+.thirty-spacer {
+  padding-top: 30px;
+}
+
+.forty-spacer {
+  padding-top: 40px;
+}
+
+.fifty-spacer {
+  padding-top: 50px;
+}
+
+.sixty-spacer {
+  padding-top: 60px;
+}
+
+.eighty-spacer {
+  padding-top: 80px;
+}
+
+.seventy-five-spacer {
+  padding-top: 75px;
+}
+
+.one-hundred-spacer {
+  padding-top: 100px;
+}
+
+.fifty-padding-both {
+  padding: 0 50px;
+}
+
+.top-push {
+  padding-top: 91px;
+}
+
+//Class Fixes
+.hide-on-responsive {
+  display: block !important;
+}
+
+.show-on-responsive {
+  display: none !important;
+}
+
+.overflow-fix {
+  overflow: hidden;
+}
+
+.flex-bottom-content {
+  margin-top: auto;
+}
+
+.z-index-fix {
+  z-index: 999;
+}
+
+.middle-divider {
+  border-right: 1px solid $dark-grey;
+}
+
+.no-desk {
+  display: none !important;
+}
+
+.add-flex-fix {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+}
+
+.flex-absolute-fix {
+  min-height: 460px;
+}
+
+.cardSliderInit .slick-dots {
+  display: none !important;
+}
+
+.no-margin-bottom {
+  margin: 0 !important;
+}
+
+.add-padding {
+  padding: 0 20px;
+}
+
+//Fixes Bold font issue mobile devices
+.ios-font-fix {
+  -webkit-text-size-adjust: 100%;
+}
+
+//Long Text Fix
+.long-text-fix {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+// Titles
+.centered-content-title-holder {
+  margin: 0 0 60px;
+  h2 {
+    display: block;
+    @include font-titling-gothic-extended-bold(20px, normal, 1px);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.white-title h2 {
+  color: $white;
+}

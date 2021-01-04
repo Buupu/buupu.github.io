@@ -1,0 +1,11 @@
+.fadeIn,
+.staggerFadeIn,
+.staggerFadeInInsta {
+  opacity: 0;
+}
+
+//End of Stagger - Slick Fix
+.slick-cloned .staggerFadeIn,
+.slick-cloned .staggerFadeInInsta {
+  opacity: 1;
+}

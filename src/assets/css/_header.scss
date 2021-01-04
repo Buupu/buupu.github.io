@@ -1,0 +1,28 @@
+.main-menu-container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  margin: 22px auto 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      a {
+        display: block;
+        padding: 0 10px 17px;
+        margin: 0;
+        @include font-titling-gothic-condensed-standard(16px, normal, 0.8px);
+        color: $dark-grey;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

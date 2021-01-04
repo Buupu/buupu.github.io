@@ -1,0 +1,328 @@
+/* ==================  Site Fonts  ================== */
+// @include font-source-hel-bold-upper(65px, 65px, 2.5px);
+
+//Normal Regular
+// @include font-titling-gothic-normal-reg(16px, 24px, -0.2px);
+@mixin font-titling-gothic-normal-reg($size: false, $lh: false, $ls: false) {
+  font-family: "Titling Gothic FB Nrm Reg", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//Normal Medium
+// @include font-titling-gothic-normal-med(16px, 24px, -0.2px);
+@mixin font-titling-gothic-normal-med($size: false, $lh: false, $ls: false) {
+  font-family: "Titling Gothic FB Nrm Med", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//Wide Medium
+// @include font-titling-gothic-wide-med(50px, 52px, -0.5px);
+@mixin font-titling-gothic-wide-med($size: false, $lh: false, $ls: false) {
+  font-family: "Titling Gothic FB Wd Med", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//Extended Regular
+// @include font-titling-gothic-extended-reg(12px, 16px, 0.6px);
+@mixin font-titling-gothic-extended-reg($size: false, $lh: false, $ls: false) {
+  font-family: "Titling Gothic FB Extd Reg", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//Extended Medium
+@mixin font-titling-gothic-extended-med($size: false, $lh: false, $ls: false) {
+  font-family: "Titling Gothic FB Extd Med", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//Extended Bold
+// @include font-titling-gothic-extended-bold(20px, 28px, 1.0px);
+@mixin font-titling-gothic-extended-bold($size: false, $lh: false, $ls: false) {
+  font-family: "Titling Gothic FB Extd Bd", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+//Condensed Standard
+@mixin font-titling-gothic-condensed-standard(
+  $size: false,
+  $lh: false,
+  $ls: false
+) {
+  font-family: "Titling Gothic FB Cond Standard", sans-serif;
+  font-display: block;
+  font-style: normal;
+  font-weight: normal;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+/* ==================  Site Animations  ================== */
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
+}
+
+@mixin transition($val) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  -ms-transition: $val;
+  transition: $val;
+}
+
+/* ==================  Site Flex Settings  ================== */
+@mixin flexbox() {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -moz-flex-grow: $grow;
+  -ms-flex-grow: $grow;
+  flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number>
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+  -moz-flex-shrink: $shrink;
+  -ms-flex-shrink: $shrink;
+  flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+  -moz-flex-basis: $width;
+  -ms-flex-basis: $width;
+  flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  align-items: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}
+
+/* ==================  Responsive Fonts Settings  ================== */
+// I'm now recommending this technique:
+@mixin interpolate(
+  $properties,
+  $min-screen,
+  $max-screen,
+  $min-value,
+  $max-value
+) {
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+
+    @media screen and (min-width: $min-screen) {
+      @each $property in $properties {
+        #{$property}: calc-interpolation(
+          $min-screen,
+          $min-value,
+          $max-screen,
+          $max-value
+        );
+      }
+    }
+
+    @media screen and (min-width: $max-screen) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
+// Requires the calc-interpolation function which can also be used independently
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+  $a: ($max-value - $min-value) / ($max-screen - $min-screen);
+  $b: $min-value - $a * $min-screen;
+
+  $sign: "+";
+  @if ($b < 0) {
+    $sign: "-";
+    $b: abs($b);
+  }
+  @return calc(#{$a * 100}vw #{$sign} #{$b});
+}
+
+// Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec

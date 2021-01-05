@@ -3,7 +3,7 @@ import SammyImg from "../../img/sammyfattah.jpg";
 import Fade from "react-reveal/Fade";
 const About = forwardRef((props, ref) => {
   return (
-    <div className="content blue-background" ref={ref}>
+    <div className="content blue-background overflow-fix" ref={ref}>
       <Fade>
         <div className="one-hundred-spacer" />
         <div className="one-flex-margin-container ">
@@ -46,6 +46,7 @@ const About = forwardRef((props, ref) => {
             <div class="half-block-image-holder about-image-holder">
               <img src={SammyImg} alt="Sammy Fattah" />
             </div>
+
             <div className="about-image-backdrop" />
           </div>
         </div>

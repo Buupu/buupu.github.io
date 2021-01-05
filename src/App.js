@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useRef } from "react";
 
 /*--------- Page Imports ----------*/
 import Home from "./assets/js/pages/home";
@@ -12,31 +11,31 @@ import About from "./assets/js/pages/about";
 import Header from "./assets/js/components/header";
 
 function App() {
-  return (
-    <Router>
-      <div className="wrapper">
-        <Header />
+  /*--------- Section Refs ----------*/
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const contactRef = useRef(null);
 
-        <div className="twenty-spacer" />
-        <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/experience">
-            <Experience />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+  return (
+    <div className="wrapper">
+      <Header
+        sections={[
+          { title: "Home", ref: homeRef },
+          { title: "About", ref: aboutRef },
+          { title: "Experience", ref: experienceRef },
+          { title: "Portfolio", ref: portfolioRef },
+          { title: "Contact", ref: contactRef },
+        ]}
+      />
+      <Home ref={homeRef} />
+      <About ref={aboutRef} />
+      <Experience ref={experienceRef} />
+      <Portfolio ref={portfolioRef} />
+      <Contact ref={contactRef} />
+      {/* footer */}
+    </div>
   );
 }
 export default App;

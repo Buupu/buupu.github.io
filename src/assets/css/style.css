@@ -36,6 +36,10 @@ h5 {
   margin: auto;
 }
 
+.full-screen-height {
+  height: 100vh;
+}
+
 /*------------ Block Containers ------------*/
 .one-block-container {
   display: block;
@@ -196,6 +200,37 @@ h5 {
   margin: 0;
 }
 
+.full-half-flex-container-vertically-centered {
+  display: block;
+  position: relative;
+  width: 50%;
+  padding: 0;
+  margin: auto 0;
+}
+
+.half-block-text-holder {
+  display: block;
+  position: relative;
+  padding: 0 100px 0 0;
+  margin: 0;
+  color: #fff;
+}
+
+.half-block-image-holder {
+  display: block;
+  position: relative;
+  width: 70%;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+
+.half-block-image-holder img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
 /*------------ Sub Header ------------*/
 .sub-header-container {
   display: block;
@@ -312,13 +347,32 @@ h5 {
 /*------------ Main Header ------------*/
 .main-header {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid #f5f5f5;
   z-index: 9999;
   -webkit-box-shadow: 2px 0px 5px rgba(39, 39, 38, 0.25);
           box-shadow: 2px 0px 5px rgba(39, 39, 38, 0.25);
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.main-header-hidden {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.main-header-hidden:hover {
+  translate: translateY(0);
+}
+
+.main-header-top {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
 }
 
 .main-header-container {
@@ -431,7 +485,7 @@ h5 {
   display: block;
   position: relative;
   height: 100%;
-  margin: auto 0 auto auto;
+  margin: auto;
   z-index: 9;
 }
 
@@ -528,6 +582,96 @@ h5 {
 }
 
 /*------------ Page CSS ------------*/
+.home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.home-content .logo-holder {
+  width: 60%;
+  margin: 0;
+  margin-left: auto;
+}
+
+.home-intro-container {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #111d5e;
+  opacity: 0.7;
+  position: relative;
+}
+
+.home-heading-container {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #111d5e;
+  opacity: 1;
+  position: relative;
+}
+
+.home-sub-heading-container {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #111d5e;
+  opacity: 0.7;
+  position: relative;
+}
+
+.about-content {
+  padding-right: 5%;
+}
+
+.about-content p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  opacity: 0.7;
+}
+
+.about-content h2 {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.about-image-holder {
+  padding: 5% 5% 0 0;
+  z-index: 10;
+}
+
+.about-image-backdrop {
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  background-color: white;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 /*------------ Misc CSS ------------*/
 /*------------ Default settings ------------*/
 textarea,
@@ -636,6 +780,10 @@ body {
   background-color: #111d5e;
 }
 
+.red-background {
+  background-color: #c70039;
+}
+
 /*------------ Spacers ------------*/
 .twenty-spacer {
   padding-top: 20px;
@@ -706,6 +854,31 @@ body {
 .staggerFadeIn,
 .staggerFadeInInsta {
   opacity: 0;
+}
+
+.primary-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background-color: #c70039;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.primary-button:hover {
+  opacity: 0.7;
 }
 
 /*------------ Reponsive CSS ------------*/
@@ -810,7 +983,27 @@ body {
     width: 220px;
   }
   .half-block-image-holder {
-    width: 460px;
+    width: 85%;
+  }
+  .about-image-backdrop {
+    width: 360px;
+    height: 360px;
+  }
+  .about-content p {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+  .about-content h2 {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 0.6px;
   }
   .centered-content-title-holder {
     margin: 0 0 50px;
@@ -837,10 +1030,9 @@ body {
 @media only screen and (min-width: 1px) and (max-width: 979px) {
   .mobile-header {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
-    border-bottom: 1px solid #f5f5f5;
     background-color: #ffffff;
     z-index: 9999;
   }

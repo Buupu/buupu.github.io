@@ -1,9 +1,8 @@
 .mobile-header {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid $off-white;
   background-color: $white;
   z-index: 9999;
 }

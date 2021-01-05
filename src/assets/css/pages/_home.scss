@@ -1,0 +1,28 @@
+.home-content {
+  display: flex;
+  height: 100%;
+  .logo-holder {
+    width: 60%;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+.home-intro-container {
+  @include font-raleway-normal-reg(42px, normal, 0.8px);
+  color: $blue;
+  opacity: 0.7;
+  position: relative;
+}
+.home-heading-container {
+  @include font-raleway-normal-reg(64px, normal, 0.8px);
+  color: $blue;
+  opacity: 1;
+  position: relative;
+}
+
+.home-sub-heading-container {
+  @include font-raleway-normal-reg(34px, normal, 0.8px);
+  color: $blue;
+  opacity: 0.7;
+  position: relative;
+}

@@ -57,7 +57,19 @@
 }
 
 .half-block-image-holder {
-  width: 460px;
+  width: 85%;
+}
+.about-image-backdrop {
+  width: 360px;
+  height: 360px;
+}
+.about-content {
+  p {
+    @include font-raleway-normal-reg(14px, normal, 0.6px);
+  }
+  h2 {
+    @include font-raleway-normal-reg(32px, normal, 0.6px);
+  }
 }
 
 // Titles

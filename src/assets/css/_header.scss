@@ -100,12 +100,26 @@
 /*------------ Main Header ------------*/
 .main-header {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid $off-white;
   z-index: 9999;
   box-shadow: 2px 0px 5px rgba($black, 0.25);
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  @include transition(all 0.3s ease-out);
+}
+
+.main-header-hidden {
+  transform: translateY(-100%);
+  &:hover {
+    translate: translateY(0);
+  }
+}
+
+.main-header-top {
+  box-shadow: none;
+  background-color: transparent;
 }
 
 .main-header-container {
@@ -199,7 +213,7 @@
   display: block;
   position: relative;
   height: 100%;
-  margin: auto 0 auto auto;
+  margin: auto;
   z-index: 9;
   ul {
     list-style: none;

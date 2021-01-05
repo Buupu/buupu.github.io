@@ -12,11 +12,14 @@
 @import "footer";
 
 /*------------ Page CSS ------------*/
+@import "pages/pages";
 
 /*------------ Misc CSS ------------*/
 @import "misc";
 
 @import "animations";
+
+@import "buttons";
 
 /*------------ Reponsive CSS ------------*/
 @import "responsive/responsive";

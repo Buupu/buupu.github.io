@@ -1,5 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-export default function Portfolio(props) {
-  return <div className="content-block"></div>;
-}
+const Portfolio = forwardRef((props, ref) => {
+  return (
+    <div
+      className="wrapper  full-screen-height  red-background"
+      ref={ref}
+    ></div>
+  );
+});
+
+export default Portfolio;

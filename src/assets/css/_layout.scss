@@ -21,6 +21,10 @@
   margin: auto;
 }
 
+.full-screen-height {
+  height: 100vh;
+}
+
 /*------------ Block Containers ------------*/
 .one-block-container {
   display: block;
@@ -155,4 +159,32 @@
   width: 50%;
   padding: 0;
   margin: 0;
+}
+
+.full-half-flex-container-vertically-centered {
+  display: block;
+  position: relative;
+  width: 50%;
+  padding: 0;
+  margin: auto 0;
+}
+.half-block-text-holder {
+  display: block;
+  position: relative;
+  padding: 0 100px 0 0;
+  margin: 0;
+  color: #fff;
+}
+.half-block-image-holder {
+  display: block;
+  position: relative;
+  width: 70%;
+  padding: 0;
+  margin: 0 0 0 auto;
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
 }

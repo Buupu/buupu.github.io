@@ -1,0 +1,16 @@
+.primary-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background-color: $red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  @include transition(all 0.3s ease-in-out);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  @include font-raleway-normal-reg(16px, normal, 0.8px);
+  &:hover {
+    opacity: 0.7;
+  }
+}

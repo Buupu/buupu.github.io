@@ -160,6 +160,18 @@ h5 {
   margin: auto;
 }
 
+.flex-column-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .half-flex-container {
   display: block;
   position: relative;
@@ -204,6 +216,14 @@ h5 {
   display: block;
   position: relative;
   width: 50%;
+  padding: 0;
+  margin: auto 0;
+}
+
+.full-flex-container-vertically-centered {
+  display: block;
+  position: relative;
+  width: 100%;
   padding: 0;
   margin: auto 0;
 }
@@ -670,6 +690,11 @@ h5 {
   top: 0;
   right: 0;
   z-index: 1;
+}
+
+.experience-nav {
+  margin: auto 0;
+  width: 75%;
 }
 
 /*------------ Misc CSS ------------*/

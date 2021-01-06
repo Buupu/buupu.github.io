@@ -3,8 +3,8 @@ import SammyImg from "../../img/sammyfattah.jpg";
 import Fade from "react-reveal/Fade";
 const About = forwardRef((props, ref) => {
   return (
-    <div className="content blue-background overflow-fix" ref={ref}>
-      <Fade>
+    <div className="content blue-background" ref={ref}>
+      <Fade delay={300}>
         <div className="one-hundred-spacer" />
         <div className="one-flex-margin-container ">
           <div className="full-half-flex-container show-on-responsive">

@@ -127,6 +127,12 @@
   margin: auto;
 }
 
+.flex-column-container {
+  @include flexbox();
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .half-flex-container {
   display: block;
   position: relative;
@@ -168,6 +174,15 @@
   padding: 0;
   margin: auto 0;
 }
+
+.full-flex-container-vertically-centered {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: auto 0;
+}
+
 .half-block-text-holder {
   display: block;
   position: relative;

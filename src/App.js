@@ -29,7 +29,7 @@ function App() {
           { title: "Contact", ref: contactRef },
         ]}
       />
-      <Home ref={homeRef} />
+      <Home ref={homeRef} portfolioRef={portfolioRef} />
       <About ref={aboutRef} />
       <Experience ref={experienceRef} />
       <Portfolio ref={portfolioRef} />

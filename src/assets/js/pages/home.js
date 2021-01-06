@@ -2,6 +2,11 @@ import React, { forwardRef } from "react";
 import Logo from "../../img/logo.png";
 
 const Home = forwardRef((props, ref) => {
+  const scrollIntoView = (ref) => {
+    ref.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="wrapper  full-screen-height" ref={ref}>
       <div className="home-content content-block">
@@ -11,7 +16,12 @@ const Home = forwardRef((props, ref) => {
           <div className="home-heading-container">I'm Sammy.</div>
           <div className="home-sub-heading-container">Web Developer.</div>
           <div className="thirty-spacer" />
-          <button className="primary-button">View my work</button>
+          <button
+            className="primary-button"
+            onClick={() => scrollIntoView(props.portfolioRef)}
+          >
+            View my work
+          </button>
         </div>
         <div className="full-half-flex-container-vertically-centered">
           <div class="logo-holder">
